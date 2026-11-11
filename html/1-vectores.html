@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mv5k8nxp-aexrv85x6">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1. Vectores | Geometría.</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Curso 1º - Enseñanza Bachillerato
+Nombre asignatura/materia: Matemáticas I">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mv5k8nxp-aexrv85x6" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Geometría</a>
+</li>
+<li class="active"> <a href="../html/1-vectores.html" class="active daddy">1. Vectores</a>
+<ul class="other-section">
+<li> <a href="../html/11-conceptos-basicos.html" class="no-ch">1.1. Conceptos básicos</a>
+</li>
+<li> <a href="../html/12-operaciones-con-vectores.html" class="no-ch">1.2. Operaciones con vectores</a>
+</li>
+<li> <a href="../html/13-dependencia-lineal.html" class="no-ch">1.3. Dependencia lineal</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-rectas.html" class="daddy">2. Rectas</a>
+<ul class="other-section">
+<li> <a href="../html/31-ecuaciones-de-la-recta.html" class="no-ch">3.1. Ecuaciones de la recta</a>
+</li>
+<li> <a href="../html/32-interpretacion-de-la-pendiente.html" class="no-ch">3.2 Interpretación de la pendiente</a>
+</li>
+<li> <a href="../html/33-posiciones-relativas-de-rectas-en-el-plano.html" class="no-ch">3.3 Posiciones relativas de rectas en el plano</a>
+</li>
+<li> <a href="../html/34-distancia-entre-un-punto-y-una-recta.html" class="no-ch">3.4 Distancia entre un punto y una recta</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mv5k8nxp-aexrv85x6" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Geometría.</p>
+<p class="package-subtitle">Vectores. Geometría plana. La recta en el plano.</p></div>
+<div class="page-header"><h1 class="page-title">1. Vectores</h1></div>
+</header><div id="page-content-page-mv5k8nxp-aexrv85x6" class="page-content">
+<article id="block-mv5k8nxq-embahpn87" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-w49jg136l" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-w49jg136l&quot;}">
+<p>En este tema vamos a trabajar con unos habitantes del país de las matemáticas llamados <strong>vectores</strong>.</p>
+<p>¿Vectores? ¿Otro concepto nuevo? No exactamente. Muchas veces, ocurre que, trabajamos y vemos cosas de las que desconocemos su nombre y sus propiedades pero que están muy presentes en nuestras vidas. Pues esto mismo es lo que te ocurrido con los vectores hasta el momento. Vamos a ver varios ejemplos que dan muestra de ello.</p>
+<p>¿Has observado alguna vez un mapa del tiempo como el que se muestra a continuación? En él aparecen unas flechas, que nos indican la dirección, el sentido y la intensidad (fuerza) del viento. Estas flechas son vectores. Así, podemos ver que el viento en Andalucía tendrá direcciones y sentidos distintos en un sólo día.  </p>
+<div align="center"><img src="../content/resources/1537792318105tapa-tiempo1.jpg" width="670" height="377" alt="" /></div>
+<div align="center">
+<div align="left"> </div>
+<div align="left">
+<div align="left">¿Y el mapa de vuelos que ofrecen las compañías aéreas desde una ciudad concreta, lo has observado con detenimiento en alguna ocasión? Pues bien, en dicho mapa hay tantos vectores como rutas haya desde dicha ciudad. </div>
+<div align="left" style="text-align: center;"><img src="../content/resources/img1.jpg" width="661" height="712" alt="" /></div>
+</div>
+</div>
+<div align="center">
+<div align="left">
+<p>Durante todo el tema trabajaremos y nos familiarizaremos aún más con ellos. Formalizaremos su definición matemática, sus principales propiedades y aplicaciones, sólo algunas de ellas porque su presencia en otros campos de conocimiento como la Física, es infinita.</p>
+<p>Por último, veremos la importancia que tienen los vectores en las construcciones de líneas rectas. Con estos últimos objetos, las <strong>rectas, </strong>concluiremos el tema. Ellas dan origen al título de nuestra unidad, <strong>El camino más corto</strong>, ya que como el propio <strong>Arquímedes </strong>recogía en su obra <em>Sobre la Esfera y el Cilindro:</em> </p>
+<p><em>"... la recta es la más corta de todas las líneas que tienen los mismos extremos ..."</em>,</p>
+<p>siendo la definición más común en nuestros días la que indica: "la línea recta es la distancia más corta entre dos puntos".</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../index.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/11-conceptos-basicos.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"><div id="siteUserFooter"> <div><script>
+// HACKeXe - https://hackexe.tiddlyhost.com
+// Maximiza el área de lectura v2.1
+document.addEventListener("DOMContentLoaded", function() {
+    // Definir el nuevo valor de max-width
+    var newMaxWidth = '100%'; // Cambia este valor a '0%' si no quieres que el ancho cambie. Puedes poner otro %, por ejemplo '100%'
+    // Verificar si la página tiene una meta etiqueta con name="generator"
+    var hasGeneratorMeta = document.querySelector('meta[name="generator"]');
+    
+    // Si no existe la etiqueta meta con name="generator", abortar la ejecución del script
+    if (!hasGeneratorMeta) {
+   return;
+    }
+    // Identificar elementos del DOM
+    var $headerBar = $("#header");
+    var $pageTitle = $('h1');
+    var $body = $('body');
+    var $siteNav = $('#siteNav');
+    var $headerOptions = $('#header-options');
+    var $pageCounter = $('.page-counter'); // Selector para el contador de páginas
+    var $content = $('#content'); // Selector para el contenido principal
+    // Añadir transiciones suaves a los elementos que cambian de ancho
+    $content.css('transition', 'max-width 0.5s ease, width 0.5s ease');
+    $body.css('transition', 'max-width 0.5s ease');
+    // Verificar el estado almacenado para la visibilidad de la cabecera y menú
+    var isHeaderHidden = localStorage.getItem('headerHidden') === 'true';
+    // Crear el botón con lógica de flechas y aplicar estilos para fijarlo en la posición deseada
+    var $toggleButton = $('<button id="toggle-nav">' + (isHeaderHidden ? "▼" : "▲") + '</button>').css({
+   'position': 'absolute',
+   'top': '5px',
+   'right': '10px',
+   'z-index': '1000',
+   'background': 'none',
+   'border': 'none',
+   'color': 'black',
+   'fontSize': '1.5rem',
+   'cursor': 'pointer'
+    }).attr('title', isHeaderHidden ? "Restaurar área de lectura" : "Maximizar área de lectura");
+    // Añadir el botón al cuerpo de la página para asegurar que siempre esté visible y fuera del flujo normal de elementos
+    $('body').append($toggleButton);
+    // Función para alternar la visibilidad de la cabecera, el menú, el contador de páginas y otras opciones
+    function toggleHeaderAndMenu() {
+   var currentlyHidden = $headerBar.css('display') === 'none';
+   
+   if (currentlyHidden) {
+  $headerBar.show();
+  $pageTitle.show();
+  $siteNav.show();
+  $headerOptions.show();
+  $pageCounter.show(); // Mostrar el contador de páginas
+  $body.removeClass('no-nav').css('padding-top', '');
+  $content.css('max-width', ''); // Restaurar el ancho original
+  $body.css('max-width', ''); // Restaurar el ancho original
+  $content.css('width', ''); // Restaurar el ancho original
+  $toggleButton.text("▲");
+  $toggleButton.attr('title', "Maximizar área de lectura");
+  localStorage.setItem('headerHidden', false);
+   } else {
+  $headerBar.hide();
+  $pageTitle.hide();
+  $siteNav.hide();
+  $headerOptions.hide();
+  $pageCounter.hide(); // Esconder el contador de páginas
+  $body.addClass('no-nav').css('padding-top', '10px');
+  
+  // Solo aplicar max-width si no es 0%
+  if (newMaxWidth !== '0%') {
+ $content.css('max-width', newMaxWidth); // Expandir el contenido
+ $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+ $content.css('width', newMaxWidth); // Expandir el contenido
+  }
+  
+  $toggleButton.text("▼");
+  $toggleButton.attr('title', "Restaurar área de lectura");
+  localStorage.setItem('headerHidden', true);
+   }
+    }
+    // Asignar evento de clic al botón
+    $toggleButton.on('click', toggleHeaderAndMenu);
+    // Inicializar el estado de la visibilidad de la cabecera, el menú y el contador de páginas
+    if (isHeaderHidden) {
+   $headerBar.hide();
+   $pageTitle.hide();
+   $siteNav.hide();
+   $headerOptions.hide();
+   $pageCounter.hide(); // Inicialmente esconder el contador de páginas
+   $body.addClass('no-nav').css('padding-top', '10px');
+   
+   // Solo aplicar max-width si no es 0%
+   if (newMaxWidth !== '0%') {
+  $content.css('max-width', newMaxWidth); // Expandir el contenido
+  $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+  $content.css('width', newMaxWidth); // Expandir el contenido
+   }
+   
+   $toggleButton.text("▼");
+   $toggleButton.attr('title', "Restaurar área de lectura");
+    } else {
+   $headerBar.show();
+   $pageTitle.show();
+   $siteNav.show();
+   $headerOptions.show();
+   $pageCounter.show(); // Inicialmente mostrar el contador de páginas
+   $body.removeClass('no-nav').css('padding-top', '');
+   $content.css('max-width', ''); // Restaurar el ancho original
+   $body.css('max-width', ''); // Restaurar el ancho original
+   $content.css('width', ''); // Restaurar el ancho original
+   $toggleButton.text("▲");
+   $toggleButton.attr('title', "Maximizar área de lectura");
+    }
+});
+</script>
+</div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

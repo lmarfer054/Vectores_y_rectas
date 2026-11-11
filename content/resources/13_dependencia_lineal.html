@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.3. Dependencia lineal | MT1 - Tema 3.3: Geometría: Vectores. Geometría plana. La recta en el plano. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="geogebra-activity.css" />
+<script type="text/javascript" src="geogebra-activity.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-auto-math" id="exe-node-39"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">MT1 - Tema 3.3: Geometría: Vectores. Geometría plana. La recta en el plano.</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Geometría: Vectores. Geometría plana. La recta en el plano</a></li>
+   <li class="current-page-parent"><a href="1_vectores.html" class="current-page-parent daddy">1. Vectores</a>
+   <ul>
+      <li><a href="11_conceptos_bsicos.html" class="no-ch">1.1. Conceptos básicos</a></li>
+      <li><a href="12_operaciones_con_vectores.html" class="no-ch">1.2. Operaciones con vectores</a></li>
+      <li id="active"><a href="13_dependencia_lineal.html" class="active no-ch">1.3. Dependencia lineal</a></li>
+   </ul>
+   </li>
+   <li><a href="2_rectas.html" class="daddy">2. Rectas</a>
+   <ul class="other-section">
+      <li><a href="31_ecuaciones_de_la_recta.html" class="no-ch">3.1. Ecuaciones de la recta</a></li>
+      <li><a href="32_interpretacin_de_la_pendiente.html" class="no-ch">3.2 Interpretación de la pendiente</a></li>
+      <li><a href="33_posiciones_relativas_de_rectas_en_el_plano.html" class="no-ch">3.3 Posiciones relativas de rectas en el plano</a></li>
+      <li><a href="34_distancia_entre_un_punto_y_una_recta.html" class="no-ch">3.4 Distancia entre un punto y una recta</a></li>
+   </ul>
+   </li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="12_operaciones_con_vectores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_rectas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.3. Dependencia lineal</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id68">
+<div class="iDevice emphasis0">
+<div id="ta68_1" class="block iDevice_content">
+<p>¿Quieres saber si un cierto vector depende de algún modo de otro o de otros? ¿Quieres saber como obtener nuevos vectores a partir de otros? Esto es precisamente lo que vamos a ver en este punto.</p>
+<p>Vamos a mezclar (combinar) las operaciones: multiplicación por escalar y sumas/restas vistas en el punto anterior, para generar nuevos vectores a partir de otros. </p>
+<p>Esta mezcla de operaciones, se denomina <strong>combinación lineal</strong>.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id176">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Definición. Dependencia lineal.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta176_130_7" class="block iDevice_content">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p>Decimos que un vector, \(\vec{u}\), <b>depende linealmente</b> de otro vector, \(\vec{v}\), o que \(\vec{u}\) y \(\vec{v}\) son <b>linealmente dependientes</b> si existe un escalar, \(\alpha \in \mathbb{R}\) (un número), de tal manera que: \(\vec{u}=\alpha \cdot \vec{v}\)</p>
+<p>Por el contrario, si no existe ningún número que cumpla esa condición, diremos que \(\vec{u}\) <b>no depende linealmente</b> de \(\vec{v}\), o que \(\vec{u}\) y \(\vec{v}\)  son <b>linealmente independientes.</b></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>En la práctica</strong> es fácil identificarlo:</p>
+<p><b><span style="font-size: x-large;">·</span></b> Gráficamente: Si dos vectores son paralelos, son linealmente dependientes.<b><span style="font-size: x-large;"></span></b></p>
+<p><b><span style="font-size: x-large;">·</span></b> Analíticamente (coordenadas): Si sus coordenadas correspondientes son proporcionales, entonces son linealmente dependientes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id70">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta70_21" class="block instructions iDevice_content">
+Lee el párrafo y completa los huecos que faltan:
+
+</div>
+
+    <div class="activity" id="activity-70_22"><form name="cloze-form-70_22" action="#" class="activity-form cloze-activity-form"><div id="cloze70_22"><input type="hidden" name="clozeFlag70_22.strictMarking" id="clozeFlag70_22.strictMarking" value="false"/>
+<input type="hidden" name="clozeFlag70_22.checkCaps" id="clozeFlag70_22.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag70_22.instantMarking" id="clozeFlag70_22.instantMarking" value="false"/>
+<p><b><span style="font-size: x-large;">·</span></b> Los vectores \((1,-5)\) y \((3,15)\) son linealmente <label for="clozeBlank70_22.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank70_22.0" style="width:14ch" /><span style="display:none" id="clozeAnswer70_22.0">JXUwMDMxJXUwMDA3JXUwMDBhJXUwMDAxJXUwMDE1JXUwMDE1JXUwMDBiJXUwMDBhJXUwMDBkJXUw
+MDBjJXUwMDBiJXUwMDFhJXUwMDExJXUwMDE2
+</span> , porque \( \dfrac{3}{1} \neq \dfrac{15}{-5}\) </p>
+<p><b><span style="font-size: x-large;">·</span></b> Los vectores \((1,-\dfrac{2}{3})\) y \((3,-2)\) son linealmente <label for="clozeBlank70_22.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank70_22.1" style="width:12ch" /><span style="display:none" id="clozeAnswer70_22.1">JXUwMDNjJXUwMDAxJXUwMDE1JXUwMDE1JXUwMDBiJXUwMDBhJXUwMDBkJXUwMDBjJXUwMDBiJXUw
+MDFhJXUwMDExJXUwMDE2
+</span> , porque \((3,-2)\) = <label for="clozeBlank70_22.2" class="sr-av">Rellenar huecos (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank70_22.2" style="width:1ch" /><span style="display:none" id="clozeAnswer70_22.2">JXUwMDZi
+</span>  \( \cdot (1,-\dfrac{2}{3})\)   </p>
+<p><b><span style="font-size: x-large;">·</span></b> Los vectores \((-3,4)\) y ( <label for="clozeBlank70_22.3" class="sr-av">Rellenar huecos (4):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank70_22.3" style="width:4ch" /><span style="display:none" id="clozeAnswer70_22.3">JXUwMDc1JXUwMDFlJXUwMDFjJXUwMDFk
+</span> , \(2)\) son paralelos.</p>
+<p> </p><div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit70_22" value="Enviar"  id="submit70_22" />
+<input type="button" name="restart70_22" value="Reiniciar" style="display:none" id="restart70_22" onclick="$exe.cloze.restart('70_22')" />
+ <input type="button" name="70_22showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton70_22" onclick="$exe.cloze.fillInputs('70_22')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore70_22"></div></div></form></div></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id71">
+<div class="iDevice emphasis0">
+<div id="ta71_1" class="block iDevice_content">
+<p>Hasta aquí, teniendo dos vectores nada más, bien. Pero, ¿y si tenemos dos vectores y queremos saber si un tercero, depende o "se puede fabricar" a partir de los dos primeros?</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id177">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Definiciones. Base. Combinación lineal. Coordenadas.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta177_130_7" class="block iDevice_content">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="font-size: medium;"><b><span style="font-size: large;">· </span></b></span>Dos vectores, \(\vec{u}\) y \(\vec{v}\), forman una <b>base </b>en el plano si son linealmente independientes.<span style="font-size: medium;"><b><span style="font-size: large;"></span></b></span></p>
+<p><span style="font-size: medium;"><b><span style="font-size: large;">·</span> </b></span>Diremos que el vector \(\vec{w}\) se puede expresar como <b>combinación lineal</b> (depende linealmente) de los vectores \(\vec{u}\) y \(\vec{v}\) si existen dos escalares \(\alpha\) y \(\beta\) de tal manera que \(\vec{w}=\alpha \cdot \vec{u} + \beta \cdot \vec{v}\)  </p>
+<p><span style="font-size: medium;"><b><span style="font-size: large;">· </span></b></span>Si dos vectores forman una base, entonces cualquier otro vector \(\vec{w}\) se puede obtener como combinación lineal de \(\vec{u}\) y \(\vec{v}\). En este caso, si \(\vec{w}=\alpha \cdot \vec{u} + \beta \cdot \vec{v}\), entonces diremos que \(\vec{w}\)<b> tiene coordenadas </b>\((\alpha,\beta)\)<b> respecto de la base formada por </b>\(\vec{u}\) y \(\vec{v}\)<span style="font-size: 1.05em;">.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper TrueFalseIdevice em_iDevice em_iDevice_question" id="id82">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta82_16" class="block iDevice_content">
+<p>
+Indica <b>Verdadero </b>o<b> Falso </b>según corresponda: 
+</p>
+
+</div>
+<div class="question">
+<form name="true-false-form-0b82" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 1</h3>
+<div id="taquestion0b82" class="block iDevice_content">
+<p><b>(1)</b> Los vectores \(\vec{u} = (5, 3)\) y \(\vec{v} = (0, -1)\) forman una base.</p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true0b82"><input type="radio" name="option0b82" id="true0b82" class="exe-radio-option exe-radio-option-0-2-0b82-truefalse" /> Verdadero</label> 
+<label for="false0b82"><input type="radio" name="option0b82" id="false0b82" class="exe-radio-option exe-radio-option-1-2-0b82-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s0b82" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s0b82-result" class="right">Verdadero</strong></p>
+<p>Los dos vectores \(\vec{u} = (5, 3)\) <span style="font-size: 1.05em;">y \(\vec{v} = (0, -1)\)</span><span style="font-size: 1.05em;"> forman una base porque son linealmente independientes porque no hay ningún número, \(\alpha\)</span><span style="font-size: 1.05em;">,  que cumpla que: \((5, 3) =\alpha \cdot (0, -1)\)</span></p>
+<p> </p>
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-1b82" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 2</h3>
+<div id="taquestion1b82" class="block iDevice_content">
+<p><b>(2)</b> Los vectores \(\vec{u} = (1, -3)\) y \(\vec{v} = (-2, 6)\) forman una base.</p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true1b82"><input type="radio" name="option1b82" id="true1b82" class="exe-radio-option exe-radio-option-0-2-1b82-truefalse" /> Verdadero</label> 
+<label for="false1b82"><input type="radio" name="option1b82" id="false1b82" class="exe-radio-option exe-radio-option-1-2-1b82-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s1b82" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s1b82-result" class="wrong">Falso</strong></p>
+<p>No forman una base porque son linealmente dependientes, sus coordenadas son proporcionales. Observa que \((-2, 6) = -2 · (1, -3)\)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id74">
+<div class="iDevice emphasis0">
+<div id="ta74_85" class="block iDevice_content">
+<p style="text-align: center;"><iframe width="913" height="383" style="border: 0px;" scrolling="no" src="https://www.geogebra.org/material/iframe/id/2394289/width/913/height/383/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"></iframe></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice em_iDevice_ejercicioresueltofpd" id="id84">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Ejercicio Resuelto</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta84_148" class="block story iDevice_content">
+
+</div>
+<div id="taquesQuestion0b84" class="block iDevice_content">
+<p>Vamos a poner en práctica lo aprendido, expresando el vector \(\vec{w}= (12, 6)\) como combinación lineal de los vectores: \(\vec{u}=(3,0)\)  y  \(\beta=(1.5, 1.5)\)</p>
+<p><em><strong>Nota:</strong> Necesitarás resolver sistemas de ecuaciones. Si no los recuerdas, puedes repasarlos en la unidad correspondiente.</em></p>
+</div>
+<form name="feedback-form-quesFeedback0b84" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b84text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b84" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<div id="feedback-quesFeedback0b84" class="feedback js-feedback js-hidden">
+<h3 class="js-sr-av">Retroalimentación</h3>
+<p>Veamos la resolución paso a paso: </p>
+<p>+ Buscamos dos escalares, \(\alpha\) y \(\beta\), de tal manera que: \(\vec{w}= \alpha \cdot \vec{u} + \beta \cdot \vec{v}\).  Es decir, que \((12, 6) =  \alpha· (3,0) + \beta· (1.5, 1.5)\)</p>
+<p>+ Multiplicando, componente a componente, tendremos: \((12, 6) = (3 \alpha, 0) + (1.5\beta, 1.5\beta) \) </p>
+<p>+ Sumando, componente a componente, llegamos a: \((12, 6) = (3\alpha + 1.5\beta, 0 + 1.5\beta)\)</p>
+<p>+ Igualando, componente a componente, tenemos un sistema de dos ecuaciones con dos incógnitas, \(\alpha\) y \(\beta\).</p>
+<p><span class="exe-math code-only position-center"><span class="exe-math-code">\[ \begin{cases} 12 =  3\alpha  + 1.5\beta \\ 6  =   0  + 1.5\beta \end{cases} \]</span></span></p>
+<p>+ Resolviendo el sistema, encontramos los escalares buscados: \(\alpha = 2, \beta= 4\)</p>
+<p> </p>
+<p><strong>Interpretación:</strong></p>
+<p>- Analítica. Ésto quiere decir que: \(\vec{w}= 2\cdot \vec{u} + 4 \cdot \vec{v}\) .  \((12, 6) = 2 · (3,0) + 4· (1.5, 1.5)\)</p>
+<p>- Gráfica. "\(\vec{w}\) se obtiene sumando \(2\) copias de \(\vec{u}\) con \(4\) de \(\vec{v}\)", tal y como podrás ver configurando el applet de Geogebra anterior.</p></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id76">
+<div class="iDevice emphasis0">
+<div id="ta76_1" class="block iDevice_content">
+<p>Dos calles son perpendiculares, si sus esquinas forman un ángulo de 90º, un ángulo recto. Pues bien,</p>
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">cuando dos vectores forman un ángulo de 90º en sus orígenes, decimos que son <b>ortogonales (o perpendiculares)</b>.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id126">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Definiciones. Base ortogonal, ortonormal y canónica.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta126_124_7" class="block iDevice_content">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p align="justify"><span style="font-size: large;"><b>·</b></span> Si una base está formada por dos vectores linealmente independientes ortogonales, la llamaremos <b>base ortogonal</b>.</p>
+<p align="justify"><span style="font-size: large;"><b>·</b></span> Si los dos vectores que forman la base, además de ser ortogonales, son unitarios, diremos que es una <b>base ortonormal.</b> La base ortonormal más sencilla se conoce con el nombre de <b>base canónica</b> y está formada por los vectores \(\vec{i} = (1,0)\)  y  \(\vec{j}= (0, 1)\).</p>
+<p align="justify"><span style="font-size: large;"><b>· </b></span>Un <span style="color: #008000;"><strong>sistema de referencia</strong></span> en el plano, es una terna formada por un punto, \(\text{O}\), que llamaremos origen del sistema de referencia y una base. Si la base es ortogonal (ortonormal), el sistema de referencia será ortogonal (ortonormal). </p>
+<p align="justify">El sistema de referencia que utilizamos normalmente es el compuesto por el punto \(\text{O} = (0,0)\) y la base canónica formada por \(\vec{i} = (1,0)\)  y  \(\vec{j}= (0, 1)\)<span style="font-size: 1.05em; text-align: left;">, es decir, \(R = \left\{\text{O},\vec{i},\vec{j}\right\}\)</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id78">
+<div class="iDevice emphasis0">
+<div id="ta78_1" class="block iDevice_content">
+<div align="center"></div>
+<p>Por último, vamos a ver, qué relación mantienen las coordenadas de un vector, respecto a los extremos del mismo.</p>
+<p>Dados dos puntos \(\mathrm{A}=(x_1,x_2)\) y \(\mathrm{B}=(y_1,y_2)\), entonces es posible obtener las <b>coordenadas del vector </b>\(\overrightarrow{\mathrm{AB}} \)<b> respecto a sus extremos</b>, simplemente restando a las coordenadas (componentes) del extremo final del vector, \(\mathrm{B}\), las del origen del mismo, \(\mathrm{A}\).</p>
+<p align="center">\(\overrightarrow{\mathrm{AB}} =(y_1-x_1,y_2-x_2)\)</p>
+<p align="center"> </p>
+<p align="left"> </p>
+<table border="0" style="height: 260px; width: 100%; background-color: #edfcfc;" cellpadding="20">
+<tbody>
+<tr style="height: 67px;">
+<td style="width: 100%; height: 67px;"><img src="icon_yoneco.png" width="60" height="60" alt="" />      Tengo que haceros una <span style="color: #0000ff;"><strong>aclaración</strong></span> que, si bien no afecta en nada al cálculo de dichas coordenadas, sí tiene importancia desde el punto de vista matemático.</td>
+</tr>
+<tr style="height: 144px;">
+<td style="width: 100%; height: 144px;">
+<p align="left">Aunque podría parecer que estamos restando las coordenadas de los puntos, "\(\overrightarrow{\mathrm{AB}}=\text {B-A} \)"<b>, </b>esto no es cierto porque la operación "restar puntos" no existe. </p>
+<p align="left">Lo que en realidad hacemos es restar vectores. Restamos al vector de posición  \(\overrightarrow{\mathrm{OB}}\) el vector \(\overrightarrow{\mathrm{OA}} \). Así: \(\overrightarrow{\mathrm{AB}}=\overrightarrow{\mathrm{OB}}-\overrightarrow{\mathrm{OA}}\) , siendo \(\text{O}\) el origen del sistema de referencia cartesiano, \(R = \left\{\text{O},\vec{i},\vec{j}\right\}\)<span style="font-family: inherit; font-size: inherit;">, es decir el origen de coordenadas \(\text{O}=(0,0)\)</span></p>
+</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 100%; height: 26px; text-align: center;">
+<p>  <img src="Coordenadas-respecto-extremos.jpg" width="345" height="284" alt="" /></p>
+<p>\(\overrightarrow{\mathrm{AB}}=\overrightarrow{\mathrm{OB}}-\overrightarrow{\mathrm{OA}}=(2-12,10-2)=(-10,8)\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id132">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Útil: punto medio de un segmento.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta132_130_7" class="block iDevice_content">
+<p>Para calcular las coordenadas del punto medio, \(\mathrm{M}=(m_1,m_2)\), del segmento cuyos extremos son los puntos \(\mathrm{A}=(a_1,a_2)\) y \(\mathrm{B}=(b_1,b_2)\) basta con aplicar la siguiente fórmula:</p>
+<div style="text-align: center;">\[(m_1,m_2)=\left(\dfrac{a_1+b_1}{2},\dfrac{a_2+b_2}{2}\right)\]</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper GeoGebraIdevice" id="id153">
+<div class="iDevice emphasis0" >
+<div id="ta153_350_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-zkpkdfmq auto-geogebra-width-2048 auto-geogebra-height-994 language-es auto-geogebra-scale-75 auto-geogebra-evaluation-id-0 auto-geogebra-ideviceid-2025119212314-60"><p><a href="https://www.geogebra.org/m/zkpkdfmq" target="_blank">https://www.geogebra.org/m/zkpkdfmq (Ventana nueva)</a></p><div class="auto-geogebra-author js-hidden">Luis%20Mart%EDnez,https%3A//www.geogebra.org/m/zkpkdfmq,Punto%20medio%20de%20un%20segmento,1,Autor%EDa</div><div class="auto-geogebra-messages-evaluation">Actividad%20no%20completada,Actividad%20superada.%20Puntuaci%F3n%3A%20%25s,Actividad%20no%20superada.%20Puntuaci%F3n%3A%20%25s,Guardar%20la%20puntuaci%F3n</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="12_operaciones_con_vectores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_rectas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="siteFooter"><script>
+// HACKeXe - https://hackexe.tiddlyhost.com
+// Maximiza el área de lectura v2.1
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Definir el nuevo valor de max-width
+    var newMaxWidth = '100%'; // Cambia este valor a '0%' si no quieres que el ancho cambie. Puedes poner otro %, por ejemplo '100%'
+
+    // Verificar si la página tiene una meta etiqueta con name="generator"
+    var hasGeneratorMeta = document.querySelector('meta[name="generator"]');
+    
+    // Si no existe la etiqueta meta con name="generator", abortar la ejecución del script
+    if (!hasGeneratorMeta) {
+        return;
+    }
+
+    // Identificar elementos del DOM
+    var $headerBar = $("#header");
+    var $pageTitle = $('h1');
+    var $body = $('body');
+    var $siteNav = $('#siteNav');
+    var $headerOptions = $('#header-options');
+    var $pageCounter = $('.page-counter'); // Selector para el contador de páginas
+    var $content = $('#content'); // Selector para el contenido principal
+
+    // Añadir transiciones suaves a los elementos que cambian de ancho
+    $content.css('transition', 'max-width 0.5s ease, width 0.5s ease');
+    $body.css('transition', 'max-width 0.5s ease');
+
+    // Verificar el estado almacenado para la visibilidad de la cabecera y menú
+    var isHeaderHidden = localStorage.getItem('headerHidden') === 'true';
+
+    // Crear el botón con lógica de flechas y aplicar estilos para fijarlo en la posición deseada
+    var $toggleButton = $('<button id="toggle-nav">' + (isHeaderHidden ? "▼" : "▲") + '</button>').css({
+        'position': 'absolute',
+        'top': '5px',
+        'right': '10px',
+        'z-index': '1000',
+        'background': 'none',
+        'border': 'none',
+        'color': 'black',
+        'fontSize': '1.5rem',
+        'cursor': 'pointer'
+    }).attr('title', isHeaderHidden ? "Restaurar área de lectura" : "Maximizar área de lectura");
+
+    // Añadir el botón al cuerpo de la página para asegurar que siempre esté visible y fuera del flujo normal de elementos
+    $('body').append($toggleButton);
+
+    // Función para alternar la visibilidad de la cabecera, el menú, el contador de páginas y otras opciones
+    function toggleHeaderAndMenu() {
+        var currentlyHidden = $headerBar.css('display') === 'none';
+        
+        if (currentlyHidden) {
+            $headerBar.show();
+            $pageTitle.show();
+            $siteNav.show();
+            $headerOptions.show();
+            $pageCounter.show(); // Mostrar el contador de páginas
+            $body.removeClass('no-nav').css('padding-top', '');
+            $content.css('max-width', ''); // Restaurar el ancho original
+            $body.css('max-width', ''); // Restaurar el ancho original
+            $content.css('width', ''); // Restaurar el ancho original
+            $toggleButton.text("▲");
+            $toggleButton.attr('title', "Maximizar área de lectura");
+            localStorage.setItem('headerHidden', false);
+        } else {
+            $headerBar.hide();
+            $pageTitle.hide();
+            $siteNav.hide();
+            $headerOptions.hide();
+            $pageCounter.hide(); // Esconder el contador de páginas
+            $body.addClass('no-nav').css('padding-top', '10px');
+            
+            // Solo aplicar max-width si no es 0%
+            if (newMaxWidth !== '0%') {
+                $content.css('max-width', newMaxWidth); // Expandir el contenido
+                $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+                $content.css('width', newMaxWidth); // Expandir el contenido
+            }
+            
+            $toggleButton.text("▼");
+            $toggleButton.attr('title', "Restaurar área de lectura");
+            localStorage.setItem('headerHidden', true);
+        }
+    }
+
+    // Asignar evento de clic al botón
+    $toggleButton.on('click', toggleHeaderAndMenu);
+
+    // Inicializar el estado de la visibilidad de la cabecera, el menú y el contador de páginas
+    if (isHeaderHidden) {
+        $headerBar.hide();
+        $pageTitle.hide();
+        $siteNav.hide();
+        $headerOptions.hide();
+        $pageCounter.hide(); // Inicialmente esconder el contador de páginas
+        $body.addClass('no-nav').css('padding-top', '10px');
+        
+        // Solo aplicar max-width si no es 0%
+        if (newMaxWidth !== '0%') {
+            $content.css('max-width', newMaxWidth); // Expandir el contenido
+            $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+            $content.css('width', newMaxWidth); // Expandir el contenido
+        }
+        
+        $toggleButton.text("▼");
+        $toggleButton.attr('title', "Restaurar área de lectura");
+    } else {
+        $headerBar.show();
+        $pageTitle.show();
+        $siteNav.show();
+        $headerOptions.show();
+        $pageCounter.show(); // Inicialmente mostrar el contador de páginas
+        $body.removeClass('no-nav').css('padding-top', '');
+        $content.css('max-width', ''); // Restaurar el ancho original
+        $body.css('max-width', ''); // Restaurar el ancho original
+        $content.css('width', ''); // Restaurar el ancho original
+        $toggleButton.text("▲");
+        $toggleButton.attr('title', "Maximizar área de lectura");
+    }
+});
+</script>
+</div></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

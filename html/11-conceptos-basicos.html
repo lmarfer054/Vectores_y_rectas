@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mv5k8nxp-5pmrotwf7">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1.1. Conceptos básicos | Geometría.</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Curso 1º - Enseñanza Bachillerato
+Nombre asignatura/materia: Matemáticas I">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/geogebra-activity/geogebra-activity.js"></script><link rel="stylesheet" href="../idevices/geogebra-activity/geogebra-activity.css">
+<script src="../idevices/casestudy/casestudy.js"></script><link rel="stylesheet" href="../idevices/casestudy/casestudy.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mv5k8nxp-5pmrotwf7" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Geometría</a>
+</li>
+<li class="current-page-parent"> <a href="../html/1-vectores.html" class="daddy">1. Vectores</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/11-conceptos-basicos.html" class="active no-ch">1.1. Conceptos básicos</a>
+</li>
+<li> <a href="../html/12-operaciones-con-vectores.html" class="no-ch">1.2. Operaciones con vectores</a>
+</li>
+<li> <a href="../html/13-dependencia-lineal.html" class="no-ch">1.3. Dependencia lineal</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-rectas.html" class="daddy">2. Rectas</a>
+<ul class="other-section">
+<li> <a href="../html/31-ecuaciones-de-la-recta.html" class="no-ch">3.1. Ecuaciones de la recta</a>
+</li>
+<li> <a href="../html/32-interpretacion-de-la-pendiente.html" class="no-ch">3.2 Interpretación de la pendiente</a>
+</li>
+<li> <a href="../html/33-posiciones-relativas-de-rectas-en-el-plano.html" class="no-ch">3.3 Posiciones relativas de rectas en el plano</a>
+</li>
+<li> <a href="../html/34-distancia-entre-un-punto-y-una-recta.html" class="no-ch">3.4 Distancia entre un punto y una recta</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mv5k8nxp-5pmrotwf7" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Geometría.</p>
+<p class="package-subtitle">Vectores. Geometría plana. La recta en el plano.</p></div>
+<div class="page-header"><h1 class="page-title">1.1. Conceptos básicos</h1></div>
+</header><div id="page-content-page-mv5k8nxp-5pmrotwf7" class="page-content">
+<article id="block-mv5k8nxq-fko7rg1ex" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-1h3hen4fb" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-1h3hen4fb&quot;}">
+<div class="exe-text-template">
+    <p>Vamos a comenzar a formalizar el concepto de vector haciendo uso de nuevo de los desplazamientos.</p>
+<p>Supongamos que vamos circulando por la única carretera existente entre dos ciudades, ciudad \(\mathrm{A}\) y ciudad \(\mathrm{B}\).</p>
+<p style="text-align: center;"><img src="../content/resources/road-210913_640.jpg" alt="carretera" title="carretera" width="350" height="233" /></p>
+<p>Tenemos dos posibles opciones, a las que llamamos vectores, que no son más que distintas maneras de orientar el segmento \(\overset{\vdash \hspace{-.1em} \rule[1.15mm]{1.8 mm}{0.15mm} \hspace{-.1em} \dashv}{\mathrm{AB}} \) .</p>
+<style>
+  ol li::marker {
+    font-weight: bold !important; /* El !important asegura que no lo pise otra regla */
+  }
+</style>
+<ol>
+<li>
+<p>Circulamos desde \(\mathrm{A}\) hacia \(\mathrm{B}\). Lo representamos como vector \(\overrightarrow{\mathrm{AB}} \). El origen es el punto \(\mathrm{A}\) y el extremo el punto \(\mathrm{B}\).</p>
+</li>
+<li>
+<p> Circulamos desde B hacia \(\mathrm{A}\). Lo representamos como vector \(\overrightarrow{\mathrm{BA}} \) . El origen es el punto \(\mathrm{B}\) y el extremo el punto \(\mathrm{A}\). </p>
+</li>
+</ol>
+<p>En los dos casos, la distancia entre los puntos \(\mathrm{A}\) y \(\mathrm{B}\) (ciudades \(\mathrm{A}\) y \(\mathrm{B}\)) es la misma y se denomina módulo del vector.</p>
+<p>La situación presentada es una de las infinitas ocasiones en las que necesitamos hacer uso de los vectores.</p>
+<p style="text-align: center;"><br /></p>
+<p><br /></p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-noadhy0to" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Definición. Vector fijo.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-l1mcx9q7b" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-l1mcx9q7b&quot;}">
+<div class="exe-text-template">
+    <table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p>Un <b><span style="color: #007632;">vector fijo</span> </b>no es más que un segmento orientado entre dos puntos que denotaremos por \(\overrightarrow{\mathrm{AB}} \). El punto \(\mathrm{A}\) se llama <b>origen </b>y el \(\mathrm{B}\) <b>extremo</b>.</p>
+<p>Atributos característicos de un vector fijo son:<b></b></p>
+<p><b>* Dirección:</b> Es la recta que pasa por los puntos \(\mathrm{A}\) y \(\mathrm{B}\)<b></b></p>
+<p><b>* Sentido</b>: Es el que va del origen al extremo del vector<b></b></p>
+<p><b>* Módulo</b>: Es la longitud del segmento \(\overset{\vdash \hspace{-.1em} \rule[1.15mm]{1.8 mm}{0.15mm} \hspace{-.1em} \dashv}{\mathrm{AB}} \). Se representa \(\lvert\overrightarrow{\mathrm{AB}}\rvert \).</p>
+<p>Cuando dos <b>vectores fijos</b> tienen iguales la dirección, el módulo y el sentido diremos que son <span style="color: #007632;"><b>equipolentes</b></span> <b>(o equivalentes)</b>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<ul></ul>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-i86plgvb6" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-h7uexc9ci" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-h7uexc9ci&quot;}">
+<p style="text-align: center;"><iframe width="900" height="700" style="border: 0px;" scrolling="no" title="" src="https://www.geogebra.org/material/iframe/id/hKxcrkmR/width/1280/height/887/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"></iframe></p>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-3tzggc82x" class="box caja-naranja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/buho.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Curiosidad.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-a8dozrx0m" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-a8dozrx0m&quot;}">
+<div class="exe-text-template">
+    <table border="0" cellpadding="15" style="width: 100%; background-color: #FFF9F2;">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<h5><span style="color: #e67e23;">¿"Dirección" prohibida o "sentido" prohibido?</span></h5>
+<p>A veces, cuando nos expresamos en el lenguaje coloquial, solemos relajarnos y perder el rigor a la hora de hablar; incluso, en ocasiones, podemos generar confusiones y conflictos innecesarios. Estas confusiones suelen aparecer, por ejemplo, cuando nos referimos a los términos <strong>dirección y sentido</strong>.</p>
+<p>Habitualmente, solemos decir que vamos en "dirección contraria o dirección prohibida", cuando vemos la siguiente señal. <br />Esta afirmación es incorrecta, esa señal indica "sentido prohibido" no "dirección prohibida". Indica que no se puede continuar hacia adelante, en el sentido de la marcha que llevamos.<br />  <br /> <img src="../content/resources/pngegg_(3).png" width="170" height="179" alt="" style="display: block; margin-left: auto; margin-right: auto;" /><br />No podemos decir que vamos en "dirección contraria" porque simplemente no existen direcciones contrarias. Hay múltiples, infinitas, direcciones. Podemos llevar la misma dirección que otro vehículo, persona, calle o se puede llevar una dirección distinta pero no podemos llevar nunca una dirección contraria a otra. Dos calles paralelas tienen la misma dirección, es decir, la dirección es la recta sobre la que están. Cuando en esa línea colocamos una flecha, entonces estamos definiendo el sentido.<br /> <br />Así, mientras hay infinitas direcciones posibles, sentidos sólo puede haber dos, así que sí se puede hablar de sentido contrario. Dos vehículos que circulan de Los Barrios a Jerez, por la A-381, y de Jerez a Los Barrios, respectivamente, circulan en la misma dirección pero en sentidos contrarios.<br /> <br /> <br /> <br />Toma nota de este detalle, verás como deberás corregir a más de uno/a y a más de dos. <strong>¡Hablemos con propiedad, gracias a las Matemáticas!</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-dsagwds8j" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Definición. Vector libre.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-qneqeu8qk" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-qneqeu8qk&quot;}">
+<div class="exe-text-template">
+    <div id="ta221_38_2" class="block" style="display: block;">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">Un <b><span style="color: #007632;">vector libre</span> </b>está compuesto por un vector fijo y todos los vectores equipolentes a él. Cada uno de estos vectores fijos es un representante del vector libre.</td>
+</tr>
+</tbody>
+</table>
+<p>Dicho de otro modo, un vector libre no es más que un vector fijo que se puede trasladar libre y paralelamente a sí mismo. Todos los representantes de un vector libre, tienen la misma dirección, el mismo sentido y el mismo módulo.</p>
+<p>Los <b>vectores libres</b> se escriben entre corchetes \([\overrightarrow{\mathrm{AB}}] \) o con letras minúsculas, \(\vec{u}\), ya que no hay dependencia de su origen y extremo, cualquier representante lo identifica.</p>
+</div>
+</div>
+</div>
+</div>
+</article><article id="block-mv5leyop-lsf6e7sdk" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejercicio: Clasificación de Vectores Equipolentes</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1791830163480-0nsahzuwc" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1791830163480-0nsahzuwc&quot;}">
+<div class="exe-text-template">
+    <!-- ACTIVIDAD INTERACTIVA: VECTORES EQUIPOLENTES (COLORES DIFERENCIADOS Y NOTACIÓN VECTORIAL EXACTA) -->
+<div style="margin: 10px 0; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b; user-select: none;">
+<div style="margin: 10px 0; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b; user-select: none;"><!-- Encabezado integrado sin caja exterior redundante -->
+<div style="background-color: #f0f4ff !important; border-left: 6px solid #000dff !important; border-radius: 8px !important; padding: 14px 18px !important; margin-bottom: 14px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; flex-wrap: wrap !important; gap: 10px !important;">
+<div><span style="font-size: 0.8rem; font-weight: 800; color: #000dff; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 2px;"><br /></span></div>
+<div style="font-size: 0.95rem; font-weight: 800; color: #000dff;"><span id="contador-vectores-clasificados">Clasificados: 0 de 12</span></div>
+</div>
+<p style="margin: 0 0 14px 0; font-size: 0.95rem; color: #334155; line-height: 1.5;">Arrastra cada uno de los <strong>12 vectores fijos</strong> a la caja que contenga su correspondiente <strong>vector libre equipolente</strong> (mismo módulo, misma dirección y mismo sentido). También puedes hacer clic sobre un vector y luego clic sobre la caja de destino.</p>
+<!-- Escena interactiva SVG a pantalla completa -->
+<div style="position: relative; width: 100%; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: inset 0 1px 4px rgba(0,0,0,0.04);"><svg id="svg-escena-vectores" viewbox="0 0 880 500" style="width: 100%; height: auto; display: block; touch-action: none;"> <defs> <!-- Rejilla de coordenadas --> <pattern id="malla-grid" width="20" height="20" patternunits="userSpaceOnUse"> <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="1"></path> </pattern> <pattern id="malla-grid-fuerte" width="100" height="100" patternunits="userSpaceOnUse"> <rect width="100" height="100" fill="url(#malla-grid)"></rect> <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#e2e8f0" stroke-width="1.2"></path> </pattern> <!-- Cabezas de flecha de cada grupo --> <marker id="arrow-patron-0" viewbox="0 0 10 10" refx="7" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"> <path d="M 0 1 L 10 5 L 0 9 z" fill="#9333ea"></path> </marker> <marker id="arrow-patron-1" viewbox="0 0 10 10" refx="7" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"> <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7"></path> </marker> <marker id="arrow-patron-2" viewbox="0 0 10 10" refx="7" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"> <path d="M 0 1 L 10 5 L 0 9 z" fill="#ea580c"></path> </marker> <marker id="arrow-patron-3" viewbox="0 0 10 10" refx="7" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"> <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"></path> </marker> <marker id="arrow-movil" viewbox="0 0 10 10" refx="7" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse"> <path d="M 0 1 L 10 5 L 0 9 z" fill="#1e293b"></path> </marker> </defs> <!-- Cuadrícula de fondo --> <rect width="880" height="500" fill="url(#malla-grid-fuerte)"></rect> <!-- ================= 4 CAJAS DIANA CON COLORES DISTINTOS ================= --> <!-- Caja 0: Púrpura / Magenta (u) --> <g id="drop-zona-0" onclick="clickZonaDestino(0)" style="cursor: pointer;"> <rect x="20" y="20" width="190" height="155" rx="8" fill="#faf5ff" stroke="#9333ea" stroke-width="2" stroke-dasharray="6,4"></rect> <text x="32" y="44" font-size="14" font-weight="900" fill="#7e22ce">GRUPO:</text> <!-- Letra u con vector flecha suprascrito exacto --> <g transform="translate(92, 30)"> <path d="M 0 2 L 11 2 M 8 0 L 11 2 L 8 4" fill="none" stroke="#7e22ce" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path> <text x="1" y="14" font-size="15" font-weight="900" fill="#7e22ce">u</text> </g> <line x1="40" y1="135" x2="160" y2="75" stroke="#9333ea" stroke-width="3.5" marker-end="url(#arrow-patron-0)"></line> </g> <!-- Caja 1: Azul Cian (v) --> <g id="drop-zona-1" onclick="clickZonaDestino(1)" style="cursor: pointer;"> <rect x="670" y="20" width="190" height="155" rx="8" fill="#f0f9ff" stroke="#0284c7" stroke-width="2" stroke-dasharray="6,4"></rect> <text x="682" y="44" font-size="14" font-weight="900" fill="#0369a1">GRUPO:</text> <g transform="translate(742, 30)"> <path d="M 0 2 L 11 2 M 8 0 L 11 2 L 8 4" fill="none" stroke="#0369a1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path> <text x="1" y="14" font-size="15" font-weight="900" fill="#0369a1">v</text> </g> <line x1="820" y1="55" x2="700" y2="115" stroke="#0284c7" stroke-width="3.5" marker-end="url(#arrow-patron-1)"></line> </g> <!-- Caja 2: Naranja Cálido (w) --> <g id="drop-zona-2" onclick="clickZonaDestino(2)" style="cursor: pointer;"> <rect x="20" y="325" width="190" height="155" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2" stroke-dasharray="6,4"></rect> <text x="32" y="349" font-size="14" font-weight="900" fill="#c2410c">GRUPO:</text> <g transform="translate(92, 335)"> <path d="M 0 2 L 13 2 M 10 0 L 13 2 L 10 4" fill="none" stroke="#c2410c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path> <text x="0" y="14" font-size="15" font-weight="900" fill="#c2410c">w</text> </g> <line x1="50" y1="360" x2="150" y2="450" stroke="#ea580c" stroke-width="3.5" marker-end="url(#arrow-patron-2)"></line> </g> <!-- Caja 3: Verde Esmeralda (z) --> <g id="drop-zona-3" onclick="clickZonaDestino(3)" style="cursor: pointer;"> <rect x="670" y="325" width="190" height="155" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" stroke-dasharray="6,4"></rect> <text x="682" y="349" font-size="14" font-weight="900" fill="#15803d">GRUPO:</text> <g transform="translate(742, 335)"> <path d="M 0 2 L 11 2 M 8 0 L 11 2 L 8 4" fill="none" stroke="#15803d" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path> <text x="1" y="14" font-size="15" font-weight="900" fill="#15803d">z</text> </g> <line x1="765" y1="455" x2="765" y2="350" stroke="#16a34a" stroke-width="3.5" marker-end="url(#arrow-patron-3)"></line> </g> <!-- Panel central de vectores no clasificados --> <rect x="235" y="35" width="410" height="430" rx="10" fill="#ffffff" fill-opacity="0.92" stroke="#cbd5e1" stroke-width="1.5"></rect> <text x="440" y="60" text-anchor="middle" font-size="12" font-weight="800" fill="#64748b" letter-spacing="0.5">VECTORES FIJOS POR CLASIFICAR</text> <!-- Capa de vectores móviles --> <g id="capa-vectores-moviles"></g> </svg></div>
+<!-- Barra de retroalimentación -->
+<div id="fb-vectores-app" style="margin-top: 12px !important; min-height: 24px !important; font-weight: 800 !important; font-size: 1rem !important; text-align: center !important;"></div>
+<!-- Botonera inferior -->
+<div style="background-color: #f8faff !important; border: 1px solid #d9e2ff !important; border-radius: 8px !important; padding: 12px 16px !important; margin-top: 12px !important; display: flex !important; justify-content: space-between !important; align-items: center !important; flex-wrap: wrap !important; gap: 10px !important;">
+<div role="button" onclick="reiniciarVectores()" style="background-color: #ffffff !important; border: 1px solid #cbd5e1 !important; color: #475569 !important; font-weight: 700 !important; font-size: 0.88rem !important; padding: 8px 16px !important; border-radius: 6px !important; cursor: pointer !important; text-transform: uppercase !important; line-height: 1 !important;" tabindex="0">Reiniciar posiciones</div>
+<div role="button" onclick="comprobarVectores()" style="background-color: #000dff !important; border: none !important; color: #ffffff !important; font-weight: 800 !important; font-size: 0.9rem !important; padding: 9px 24px !important; border-radius: 6px !important; cursor: pointer !important; box-shadow: 0 2px 6px rgba(0, 13, 255, 0.35) !important; text-transform: uppercase !important; line-height: 1 !important;" tabindex="0">Comprobar</div>
+</div>
+</div>
+</div>
+<style>
+    .vector-g-cursor {
+      cursor: grab;
+      transition: filter 0.15s ease;
+    }
+    .vector-g-cursor:hover {
+      filter: drop-shadow(0 2px 5px rgba(0,0,0,0.25));
+    }
+    .vector-g-cursor.activo {
+      cursor: grabbing;
+      filter: drop-shadow(0 0 8px #000dff);
+    }
+  </style>
+<div id="equipolentes-app" style="margin: 10px 0; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b; user-select: none;"></div>
+<p>
+<script>
+(function() {
+  const CLASES = [
+    { id: 0, dx: 120, dy: -60 }, // u (+120, -60)
+    { id: 1, dx: -120, dy: 60 }, // v (-120, +60)
+    { id: 2, dx: 100, dy: 90 },  // w (+100, +90)
+    { id: 3, dx: 0, dy: -105 }   // z (0, -105)
+  ];
+
+  // 12 vectores distribuidos holgadamente para evitar superposiciones iniciales
+  const VECTORES_BASE = [
+    // 3 equipolentes a u (clase 0)
+    { id: 0, clase: 0, origX: 250, origY: 145 },
+    { id: 1, clase: 0, origX: 470, origY: 130 },
+    { id: 2, clase: 0, origX: 370, origY: 215 },
+    // 3 equipolentes a v (clase 1)
+    { id: 3, clase: 1, origX: 400, origY: 85 },
+    { id: 4, clase: 1, origX: 600, origY: 220 },
+    { id: 5, clase: 1, origX: 430, origY: 275 },
+    // 3 equipolentes a w (clase 2)
+    { id: 6, clase: 2, origX: 250, origY: 200 },
+    { id: 7, clase: 2, origX: 330, origY: 335 },
+    { id: 8, clase: 2, origX: 510, origY: 335 },
+    // 3 equipolentes a z (clase 3)
+    { id: 9, clase: 3, origX: 275, origY: 345 },
+    { id: 10, clase: 3, origX: 435, origY: 420 },
+    { id: 11, clase: 3, origX: 590, origY: 410 }
+  ];
+
+  const CAJAS = [
+    { xMin: 20, xMax: 210, yMin: 20, yMax: 175, centroX: 115, centroY: 97 },
+    { xMin: 670, xMax: 860, yMin: 20, yMax: 175, centroX: 765, centroY: 97 },
+    { xMin: 20, xMax: 210, yMin: 325, yMax: 480, centroX: 115, centroY: 402 },
+    { xMin: 670, xMax: 860, yMin: 325, yMax: 480, centroX: 765, centroY: 402 }
+  ];
+
+  let vectores = [];
+  let vectorSeleccionado = null;
+  let arrastrando = false;
+  let offsetMouse = { x: 0, y: 0 };
+
+  function initVectores() {
+    vectores = VECTORES_BASE.map(v => ({
+      id: v.id,
+      clase: v.clase,
+      x: v.origX,
+      y: v.origY,
+      dx: CLASES[v.clase].dx,
+      dy: CLASES[v.clase].dy,
+      color: "#334155",
+      asignadoACaja: null
+    }));
+    vectorSeleccionado = null;
+    arrastrando = false;
+    document.getElementById('fb-vectores-app').innerHTML = '';
+    actualizarContador();
+    dibujarVectores();
+  }
+
+  function getSVGPoint(e) {
+    const svg = document.getElementById('svg-escena-vectores');
+    const pt = svg.createSVGPoint();
+    if (e.touches && e.touches.length > 0) {
+      pt.x = e.touches[0].clientX;
+      pt.y = e.touches[0].clientY;
+    } else {
+      pt.x = e.clientX;
+      pt.y = e.clientY;
+    }
+    return pt.matrixTransform(svg.getScreenCTM().inverse());
+  }
+
+  function dibujarVectores() {
+    const capa = document.getElementById('capa-vectores-moviles');
+    capa.innerHTML = '';
+
+    vectores.forEach((v, idx) => {
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('class', 'vector-g-cursor' + (vectorSeleccionado === idx ? ' activo' : ''));
+      g.setAttribute('id', 'vec-' + idx);
+
+      const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      line.setAttribute('x1', v.x);
+      line.setAttribute('y1', v.y);
+      line.setAttribute('x2', v.x + v.dx);
+      line.setAttribute('y2', v.y + v.dy);
+      line.setAttribute('stroke', (vectorSeleccionado === idx) ? '#000dff' : v.color);
+      line.setAttribute('stroke-width', '3');
+      line.setAttribute('marker-end', 'url(#arrow-movil)');
+
+      const origen = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      origen.setAttribute('cx', v.x);
+      origen.setAttribute('cy', v.y);
+      origen.setAttribute('r', '6');
+      origen.setAttribute('fill', (vectorSeleccionado === idx) ? '#000dff' : '#0f172a');
+      origen.setAttribute('stroke', '#ffffff');
+      origen.setAttribute('stroke-width', '2');
+
+      const clickArea = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      clickArea.setAttribute('x1', v.x);
+      clickArea.setAttribute('y1', v.y);
+      clickArea.setAttribute('x2', v.x + v.dx);
+      clickArea.setAttribute('y2', v.y + v.dy);
+      clickArea.setAttribute('stroke', 'transparent');
+      clickArea.setAttribute('stroke-width', '22');
+
+      g.appendChild(clickArea);
+      g.appendChild(line);
+      g.appendChild(origen);
+
+      g.addEventListener('mousedown', (e) => iniciarArrastre(e, idx));
+      g.addEventListener('touchstart', (e) => iniciarArrastre(e, idx), { passive: false });
+
+      capa.appendChild(g);
+    });
+  }
+
+  function iniciarArrastre(e, idx) {
+    e.preventDefault();
+    vectorSeleccionado = idx;
+    arrastrando = true;
+    const p = getSVGPoint(e);
+    offsetMouse.x = p.x - vectores[idx].x;
+    offsetMouse.y = p.y - vectores[idx].y;
+    dibujarVectores();
+  }
+
+  function moverArrastre(e) {
+    if (!arrastrando || vectorSeleccionado === null) return;
+    e.preventDefault();
+    const p = getSVGPoint(e);
+    let v = vectores[vectorSeleccionado];
+    v.x = Math.round(p.x - offsetMouse.x);
+    v.y = Math.round(p.y - offsetMouse.y);
+    dibujarVectores();
+  }
+
+  function soltarArrastre(e) {
+    if (!arrastrando || vectorSeleccionado === null) return;
+    arrastrando = false;
+    let v = vectores[vectorSeleccionado];
+
+    let midX = v.x + (v.dx / 2);
+    let midY = v.y + (v.dy / 2);
+    let cajaDestino = null;
+
+    CAJAS.forEach((c, cIdx) => {
+      if (midX >= c.xMin && midX <= c.xMax && midY >= c.yMin && midY <= c.yMax) {
+        cajaDestino = cIdx;
+      }
+    });
+
+    v.asignadoACaja = cajaDestino;
+    actualizarContador();
+    dibujarVectores();
+  }
+
+  window.clickZonaDestino = function(cajaIdx) {
+    if (vectorSeleccionado !== null) {
+      let v = vectores[vectorSeleccionado];
+      v.asignadoACaja = cajaIdx;
+      let c = CAJAS[cajaIdx];
+      let offset = (v.id % 3) * 12 - 12;
+      v.x = c.centroX - (v.dx / 2) + offset;
+      v.y = c.centroY - (v.dy / 2) + offset;
+      vectorSeleccionado = null;
+      actualizarContador();
+      dibujarVectores();
+    }
+  };
+
+  function actualizarContador() {
+    let cant = vectores.filter(v => v.asignadoACaja !== null).length;
+    document.getElementById('contador-vectores-clasificados').textContent = `Clasificados: ${cant} de ${vectores.length}`;
+  }
+
+  window.reiniciarVectores = function() {
+    initVectores();
+  };
+
+  window.comprobarVectores = function() {
+    const fb = document.getElementById('fb-vectores-app');
+    let faltan = vectores.filter(v => v.asignadoACaja === null).length;
+
+    if (faltan > 0) {
+      fb.style.color = '#dc2626';
+      fb.innerHTML = `⚠️ Aún te faltan <strong>${faltan}</strong> vectores por colocar en sus cajas.`;
+      return;
+    }
+
+    let todosBien = true;
+    vectores.forEach(v => {
+      if (v.asignadoACaja === v.clase) {
+        v.color = '#16a34a';
+      } else {
+        v.color = '#dc2626';
+        todosBien = false;
+      }
+    });
+
+    dibujarVectores();
+
+    if (todosBien) {
+      fb.style.color = '#15803d';
+      fb.innerHTML = '🎉 ¡Perfecto! Los 12 vectores fijos han sido clasificados correctamente en sus 4 vectores libres equipolentes.';
+    } else {
+      fb.style.color = '#b91c1c';
+      fb.innerHTML = 'Revisa los vectores marcados en rojo: deben tener exactamente la misma pendiente (dirección) y el mismo sentido.';
+    }
+  };
+
+  const svg = document.getElementById('svg-escena-vectores');
+  svg.addEventListener('mousemove', moverArrastre);
+  svg.addEventListener('mouseup', soltarArrastre);
+  svg.addEventListener('touchmove', moverArrastre, { passive: false });
+  svg.addEventListener('touchend', soltarArrastre);
+
+  initVectores();
+})();
+</script>
+</p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-nedvyjy81" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-47lzulyod" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-47lzulyod&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">¿Cuántos vectores libres has obtenido con la agrupación anterior?</p>
+<p style="text-align: justify;">Cuatro, ¿verdad?. Los 12 vectores fijos, han quedado reducidos a tan sólo cuatro vectores libres. O sea, que en principio hay muchos vectores fijos pero en muchos casos representan el mismo vector libre, es decir, representan el mismo desplazamiento.</p>
+<p style="text-align: justify;">Hasta aquí hemos visto la cara geométrica de los vectores. A continuación, veremos la cara algebraica de los mismos y, de aquí en adelante, trabajaremos en paralelo desde ambos mundos: "el geométrico (dibujos) y el algebraico (coordenadas)"</p>
+<p style="text-align: justify;">Ya sabes que los vectores indican desplazamientos desde un punto origen a un punto extremo. <b>Desplazamientos que tienen dos componentes: la componente horizontal (hacia la derecha o hacia la izquierda) y la componente vertical (hacia arriba o hacia abajo).</b> Cada uno de ellos es realmente un vector y la suma de ambos vectores indicará el desplazamiento total. Esta es la base sobre la que se sustenta la introducción de las coordenadas de los vectores y que representa la conexión entre los dos mundos: dibujos y coordenadas.</p>
+<p> </p>
+<div style="text-align: center;">
+<table style="border: 0pt solid #000000;" align="center" border="0">
+<tbody>
+<tr>
+<td>
+<div style="text-align: center;"><img src="../content/resources/Coordenadas.jpg" height="291" width="482" /></div>
+<div style="text-align: center;"><br /></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: xx-small;"><b>Las coordenadas del vector v son (+6,-4) Desplazamientos: Horizontal x= +6 (hacia la derecha), Vertical y=-4 (hacia abajo)</b></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br /></p>
+<p style="text-align: justify;">Si observas con detenimiento la escena anterior, comprobarás que lo que ocurre es que todos los vectores equipolentes representan exactamente los mismos desplazamientos, todos tienen las mismas coordenadas. Partiendo de distintos orígenes pero, al fin y al cabo, los mismos desplazamientos.</p>
+<p> </p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-7klsiqjo8" class="box caja-azul boton-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_casopractico.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejercicio. Coordenadas de vectores.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1791877318624-xqv4y8meu" class="idevice_node geogebra-activity" data-idevice-path="../idevices/geogebra-activity/" data-idevice-type="geogebra-activity">
+<div class="auto-geogebra auto-geogebra-egcjnew8 auto-geogebra-width-1024 auto-geogebra-height-500 showSuggestionButtons0 ShowTitle0 ShowAuthor0 auto-geogebra-scale-100 auto-geogebra-evaluation-id-0 auto-geogebra-ideviceid-idevice-1791877318624-xqv4y8meu auto-geogebra-weight-100"><div class="game-evaluation-ids js-hidden" data-id="idevice-1791877318624-xqv4y8meu" data-evaluationb="false" data-evaluationid="0"></div><p><a href="https://www.geogebra.org/m/egcjnew8" target="_blank">https://www.geogebra.org/m/egcjnew8 (Ventana nueva)</a></p><div class="auto-geogebra-author js-hidden">Luis%20Mart%EDnez,https%3A//www.geogebra.org/m/egcjnew8,Vector%20como%20Coordenada%202,0,Autor%EDa,0,T%EDtulo</div><div class="auto-geogebra-messages-evaluation">Actividad%20no%20completada,Actividad%20superada.%20Puntuaci%F3n%3A%20%25s,Actividad%20no%20superada.%20Puntuaci%F3n%3A%20%25s,Guardar%20la%20puntuaci%F3n</div><div class="auto-geogebra-messages-scorm">La%20puntuaci%F3n%20no%20se%20puede%20guardar%20porque%20esta%20p%E1gina%20no%20forma%20parte%20de%20un%20paquete%20SCORM,Su%20puntuaci%F3n,Puntuaci%F3n,Peso,La%20%FAltima%20puntuaci%F3n%20guardada%20es</div></div>
+</div><div id="idevice-1791834153025-bv3e7u029" class="idevice_node casestudy ejercicio-custom" data-idevice-path="../idevices/casestudy/" data-idevice-type="casestudy" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1791834153025-bv3e7u029&quot;,&quot;typeGame&quot;:&quot;Case study&quot;,&quot;history&quot;:&quot;&lt;p&gt;Apoyándote en este applet de Geogebra, realiza las siguientes actividades:&lt;/p&gt;&quot;,&quot;textInfoDurationInput&quot;:&quot;&quot;,&quot;textInfoDurationTextInput&quot;:&quot;Duración&quot;,&quot;textInfoParticipantsInput&quot;:&quot;&quot;,&quot;textInfoParticipantsTextInput&quot;:&quot;Agrupamiento&quot;,&quot;activities&quot;:[{&quot;activity&quot;:&quot;&lt;p&gt;&lt;strong&gt;(1) &lt;/strong&gt;Desplazando únicamente el extremo del vector \\(\\vec{v}\\), obtén un vector equipolente a \\(\\vec{u}\\) &lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;&lt;span&gt;Un vector equipolente a \\(\\vec{u}\\)&lt;/span&gt;&lt;span&gt;, tendrá la misma dirección, el mismo sentido y el mismo módulo (longitud) que \\(\\vec{u}\\)&lt;/span&gt;&lt;span&gt;. Por tanto tendrá sus mismas coordenadas.&lt;/span&gt;&lt;img src=\&quot;../content/resources/v1.jpg\&quot; height=\&quot;312\&quot; width=\&quot;301\&quot; style=\&quot;display: block; margin-left: auto; margin-right: auto;\&quot; /&gt;&lt;/p&gt;&quot;,&quot;buttonCaption&quot;:&quot;Mostrar retroalimentación&quot;},{&quot;activity&quot;:&quot;&lt;p&gt;&lt;b&gt;(2) &lt;/b&gt;&lt;span&gt;Representa los vectores \\(\\vec{u}=(15,6)\\) y \\(\\vec{v}=(-15,0)\\).&lt;/span&gt;&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;&lt;img src=\&quot;../content/resources/v2.png\&quot; width=\&quot;50%\&quot; style=\&quot;display: block; margin-left: auto; margin-right: auto;\&quot; /&gt;&lt;/p&gt;&quot;,&quot;buttonCaption&quot;:&quot;Mostrar retroalimentación&quot;},{&quot;activity&quot;:&quot;&lt;p&gt;&lt;b&gt;(3)&lt;span&gt; &lt;/span&gt;&lt;/b&gt;&lt;span&gt;El vector representado en la imagen &lt;/span&gt;&lt;img src=\&quot;../content/resources/Auto-Coor-3.jpg\&quot; height=\&quot;140\&quot; width=\&quot;100\&quot; /&gt;&lt;span&gt; es:&lt;/span&gt;&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;\\((0,4.5)\\)&lt;/p&gt;&quot;,&quot;buttonCaption&quot;:&quot;Mostrar retroalimentación&quot;}]}" data-idevice-template="casestudy.html">
+<div class="exe-casestudy-container">
+  
+        <div class="caseStudyContent">            
+            <div class="CSP-Info mb-3">
+                
+            <dl>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+            </dl>
+            </div>
+            <div class="CSP-History mb-3" >
+                <p>Apoyándote en este applet de Geogebra, realiza las siguientes actividades:</p>
+            </div>
+            <div class="CSP-Activities mb-3">
+                
+                <div class="CSP-ActivityDiv ">
+                    <div class="CSP-Activity mb-3">
+                        <p><strong>(1) </strong>Desplazando únicamente el extremo del vector \(\vec{v}\), obtén un vector equipolente a \(\vec{u}\) </p>
+                    </div>
+                    
+                    <div class="iDevice_buttons feedback-button js-required">
+                        <input type="button" class="CSP-FeedbackBtn feedbacktooglebutton" value="Mostrar retroalimentación">
+                    </div>
+                    <div class="CSP-FeedbackText feedback js-feedback js-hidden" style="display: none;">
+                        <p><span>Un vector equipolente a \(\vec{u}\)</span><span>, tendrá la misma dirección, el mismo sentido y el mismo módulo (longitud) que \(\vec{u}\)</span><span>. Por tanto tendrá sus mismas coordenadas.</span><img src="../content/resources/v1.jpg" height="312" width="301" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+                    </div>
+                </div>
+            
+                <div class="CSP-ActivityDiv CSP-ActivityDivBlack">
+                    <div class="CSP-Activity mb-3">
+                        <p><b>(2) </b><span>Representa los vectores \(\vec{u}=(15,6)\) y \(\vec{v}=(-15,0)\).</span></p>
+                    </div>
+                    
+                    <div class="iDevice_buttons feedback-button js-required">
+                        <input type="button" class="CSP-FeedbackBtn feedbacktooglebutton" value="Mostrar retroalimentación">
+                    </div>
+                    <div class="CSP-FeedbackText feedback js-feedback js-hidden" style="display: none;">
+                        <p><img src="../content/resources/v2.png" width="50%" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+                    </div>
+                </div>
+            
+                <div class="CSP-ActivityDiv ">
+                    <div class="CSP-Activity mb-3">
+                        <p><b>(3)<span> </span></b><span>El vector representado en la imagen </span><img src="../content/resources/Auto-Coor-3.jpg" height="140" width="100" /><span> es:</span></p>
+                    </div>
+                    
+                    <div class="iDevice_buttons feedback-button js-required">
+                        <input type="button" class="CSP-FeedbackBtn feedbacktooglebutton" value="Mostrar retroalimentación">
+                    </div>
+                    <div class="CSP-FeedbackText feedback js-feedback js-hidden" style="display: none;">
+                        <p>\((0,4.5)\)</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+</div>
+
+</div>
+</div>
+</article><article id="block-mv5k8nxq-ofwtwpefn" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-h0wv7f076" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-h0wv7f076&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">Para que un determinado servicio web, como puede ser Google Maps o cualquier otro servidor de mapas o un GPS, que tengamos en nuestro vehículo o en el propio móvil, nos pueda proporcionar una ruta en coche para <em>"Ir desde: " "Hasta: "</em> es necesario, previamente, etiquetar correctamente en la cartografía el/los sentido/s del tráfico permitido/s. De nuevo, son importantes los vectores en nuestras vidas así como el sentido de los mismos.</p>
+<div align="center" style="text-align: justify;"> </div>
+<table border="0" align="left" cellpadding="15" style="width: 45%;">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff; width: 100%;">
+<div align="center"> </div>
+<div style="text-align: center;"><img src="../content/resources/476f6f676c655f4d6170732d53656e7469646f5f64656c5f5472c3a16669636f.jpg" width="595" height="361" /></div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; border: 1px solid #ffffff; width: 100%;"><strong><span style="font-size: xx-small;">Vectores: sentido del tráfico en la cartografía. Imprescindible para el cálculo de rutas en los navegadores</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;">Si este trabajo sobre la cartografía no se ha realizado correctamente o, por ejemplo, el Ayuntamiento de una ciudad ha cambiado el sentido del tráfico de una determinada calle y la cartografía no lo ha actualizado, nos podemos encontrar con que el navegador de nuestro coche nos indique:</p>
+<p style="text-align: justify;"><em>"Gire a la derecha"</em> y ... <em>¡sorpresa!</em> no es posible porque es sentido prohibido.</p>
+<p style="text-align: justify;">Fíjate hasta qué punto, es importante el sentido de los vectores en el cálculo de itinerarios/rutas.</p>
+<p style="text-align: justify;">Y ya que estamos con calles y rutas ...</p>
+<p style="text-align: justify;"><strong>¿Podrías decir cuánto mide una calle?</strong></p>
+<p style="text-align: justify;">Efectivamente, la longitud del segmento que hay de un extremo a otro de la misma. Pues este es exactamente el concepto de módulo de un vector.</p>
+<p style="text-align: justify;"><strong>¿Y la distancia que recorres de un determinado punto a otro? ¿cómo la obtendrías?</strong></p>
+<p style="text-align: justify;">Pues definiendo un vector, entre los puntos origen y destino (extremo) y calculando el módulo del mismo.</p>
+<p style="text-align: justify;"> </p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-4kop6gnbm" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Definición. Módulo de un vector.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-6odniks38" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-6odniks38&quot;}">
+<div class="exe-text-template">
+    <table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><b><span style="font-size: medium;">·</span></b> El <b><span style="color: #007632;">módulo</span> </b>(o longitud) de un vector \(\vec{v}=(v_1,v_2)\)  es igual a la longitud del segmento que une su origen y su extremo. El módulo, puede ser calculado de un modo sencillo (haciendo uso del Teorema de Pitágoras), mediante la siguiente fórmula:</p>
+<div style="text-align: center;">\(|\vec{v}|=\sqrt{v_1^2+v_2^2}\)</div>
+<div style="text-align: center;"> </div>
+<p><b><span style="font-size: medium;">·</span></b> Un vector es <b>unitario </b>si su módulo vale \(1\). A partir de cualquier vector, \(\vec{v}\), podemos obtener otro vector, \(\vec{u}\), que tenga la misma dirección y el mismo sentido que \(\vec{v}\) pero que sea unitario, es decir, con módulo igual a \(1\). Basta dividir, cada una de las componentes (coordenadas) de \(\vec{v}\) entre el módulo de \(\vec{v}\), \(|\vec{v}|\) .  </p>
+<p><br /></p>
+<div style="text-align: center;">\(\vec{u}=\dfrac{\vec{v}}{|\vec{v}|}\) </div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-boatmp360" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Vídeo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-j2cbi5izk" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-j2cbi5izk&quot;}">
+<p>Veamos en el siguiente vídeo cómo se calcula el módulo de un vector y cuál es su aplicación más directa:</p>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/UHR__NIsbPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-0bymnspgb" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_completa.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Completa.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-9lwua8lsr" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-9lwua8lsr&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;},&quot;id&quot;:&quot;idevice-mv5k8nxq-9lwua8lsr&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;&lt;b&gt;&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;La prensa nuestra de cada día.&lt;/b&gt;&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1791876301759-AXVNX&quot;,&quot;activityType&quot;:&quot;fill&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;Una señora acude cada mañana a recoger el periódico a un kiosko de prensa que se ubica cerca de casa. Para ello, debe caminar, al salir de su vivienda ocho metros en dirección Este (hacia la derecha) y seis metros en dirección Sur (hacia abajo).&lt;/p&gt;\n&lt;p&gt;El vector que describe el trayecto diario de esta señora es el ( &lt;u&gt;8&lt;/u&gt; , &lt;u&gt;-6&lt;/u&gt; ). &lt;/p&gt;\n&lt;p&gt;En total recorre &lt;u&gt;10&lt;/u&gt; metros.&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&lt;p&gt;Cuidado que no es tan simple como parece. ¡Léelo detenidamente! Puedes ayudarte del applet de Geogebra anterior.&lt;/p&gt;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container">
+  <div class="game-evaluation-ids js-hidden" data-id="idevice-mv5k8nxq-9lwua8lsr" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-mv5k8nxq-9lwua8lsr" class="form-IDevice" data-id="idevice-mv5k8nxq-9lwua8lsr">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p><b></b><br /></p>
+<p><b>La prensa nuestra de cada día.</b></p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-mv5k8nxq-9lwua8lsr">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-mv5k8nxq-9lwua8lsr" style="display:none;">
+                      <button  id="frmStartGame-idevice-mv5k8nxq-9lwua8lsr" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-mv5k8nxq-9lwua8lsr" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-mv5k8nxq-9lwua8lsr" > </div>
+                        <div id="frmCover-idevice-mv5k8nxq-9lwua8lsr" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-mv5k8nxq-9lwua8lsr" class="form-results-container inline">
+                        <div id="form-score-idevice-mv5k8nxq-9lwua8lsr" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-mv5k8nxq-9lwua8lsr" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-mv5k8nxq-9lwua8lsr" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-mv5k8nxq-9lwua8lsr" data-pass-rate="" />
+                        <input id="form-button-reset-idevice-mv5k8nxq-9lwua8lsr" type="button" value="Reiniciar"
+                            data-id="idevice-mv5k8nxq-9lwua8lsr" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-mv5k8nxq-9lwua8lsr" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-mv5k8nxq-9lwua8lsr" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+                <div class="form-instructions"><p>Cuidado que no es tan simple como parece. ¡Léelo detenidamente! Puedes ayudarte del applet de Geogebra anterior.</p></div>
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-vne1mxzq8" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Definiciones. Vectores opuestos y concurrentes.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-bozmb2oyi" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-bozmb2oyi&quot;}">
+<div class="exe-text-template">
+    <table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p>Dos tipos de vectores especiales son los vectores <strong>opuestos</strong> y los <strong>concurrentes</strong>:</p>
+<p><span style="font-size: medium;"><strong>·</strong></span> El<strong> <span style="color: #007632;">opuesto</span></strong> de un vector \(\vec{v}=(v_1,v_2)\)  es otro vector que tiene el mismo módulo y dirección que \(\vec{v}\) , pero distinto sentido.</p>
+<p>Se representa por \(-\vec{v}\) y sus coordenadas son  \(-\vec{v}=(-v_1,-v_2)\) </p>
+<p><span style="font-size: medium;"><strong>· </strong></span>Dos vectores son <span style="color: #007632;"><strong>concurrentes</strong></span> si tienen el mismo origen, es decir, si parten del mismo punto.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-qmkmwk85x" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_v_o_f.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Verdadero o falso.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-r3xfo0em4" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-mv5k8nxq-r3xfo0em4&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;&lt;b&gt;La señora está enferma ...&lt;/b&gt;&lt;/p&gt;\n&lt;p&gt;y no puede ir a recoger el periódico. Realiza una llamada al kiosko para comunicarlo y, el kioskero, muy amablemente, decide llevárselo a su casa.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;attemptsNumber&quot;:1,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;&lt;b&gt;(1) &lt;/b&gt;El vector que describirá el desplazamiento del señor, desde el kiosco hasta la vivienda de la señora, es opuesto al vector que describe el trayecto diario de la señora desde su domicilio hasta el kiosko.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Es el mismo pero en sentido contrario.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Puedes ayudarte del applet de Geogebra que está más arriba en esta misma página.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;&lt;b&gt;(2) &lt;/b&gt;Las coordenadas del vector desplazamiento del kioskero son \\((8,6)\\)&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Los desplazamientos que realizan vienen descritos por vectores opuestos. Por tanto, el opuesto de \\((8,-6)\\) [Vector del trayecto de la señora hacia el kiosko] es el \\((-8,6)\\) [Vector del trayecto del kioskero a la casa de la señora]. Ésto es, \\(6\\) metros hacia el Norte y \\(8\\) metros hacia el Oeste.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Puedes ayudarte del applet de Geogebra que está más arriba en esta misma página.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;b&gt;(3) &lt;/b&gt;Justo en el momento que el kioskero sale del kiosko para ir a casa de la señora, un cliente sale del kiosko caminando veinte metros en dirección Sur. Los vectores desplazamientos del kioskero y del cliente son concurrentes. \n&quot;,&quot;feedback&quot;:&quot;Es correcto, porque conocemos que el origen de ambos trayectos es el mismo, el kiosko. Como los vectores tienen el mismo origen, son concurrentes. \n&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;b&gt;(4) &lt;/b&gt;El trayecto que realiza el kioskero hacia la casa de la señora es más largo que el que realiza la señora hasta el kiosko. \n&quot;,&quot;feedback&quot;:&quot;Tiene la misma distancia, porque sus vectores son opuestos, mismo recorrido pero en sentido contrario y, sabemos que, los vectores opuestos tienen el mismo módulo (la misma longitud). ¡Compruébalo, usando la escena de Geogebra, pinta los dos vectores y calcula sus módulos.\n&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;&lt;b&gt;(5) &lt;/b&gt;El vector que describe la trayectoria del cliente que abandona el kiosko al mismo tiempo que el kioskero es el \\((0,-20)\\). Su módulo vale \\(-20\\).&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Es el \\((0,-20)\\), \&quot;\\(0\\)\&quot; en dirección horizontal (Este-Oeste) y \&quot;\\(20\\)\&quot; en dirección vertical (Sur, hacia abajo, por tanto, negativa)&lt;/p&gt;\n&lt;p&gt;El módulo de un vector es una distancia, por tanto, siempre es positiva o nula. Vale \\(20\\), lo puedes comprobar pintando el vector en el applet de Geogebra y calculando su módulo o, directamente, desde aquí:&lt;/p&gt;\n&lt;p&gt;\\(|(0,20)|=\\sqrt{0^2+(-20)^2}=\\sqrt{400}=20\\)&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;&lt;b&gt;(6) &lt;/b&gt;Un vector unitario, con la misma dirección y el mismo sentido que el vector que describe la trayectoria del desplazamiento de la señora hasta el kiosko es el \\( \\left( \\dfrac{4}{5},-\\dfrac{3}{5} \\right) \\) &lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Para obtener un vector unitario, a partir de uno dado, sólo hace falta dividir cada una de las coordenadas de dicho vector entre el módulo del mismo.&lt;/p&gt;\n&lt;p&gt;\\(|(8,-6)|=\\sqrt{8^2+(-6)^2}=\\sqrt{100}=10\\)&lt;/p&gt;\n&lt;p&gt;\\( \\vec{u}=\\left( \\dfrac{8}{10},-\\dfrac{6}{10} \\right) \\overset{simplificando}{=} \\left( \\dfrac{4}{5},-\\dfrac{3}{5} \\right) \\)&lt;/p&gt;\n&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Recuerda que el vector desplazamiento de la trayectoria de la señora es el (8,-6). Mira en la definición de módulo, si no recuerdas cómo convertir un vector en unitario.&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-r3xfo0em4&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-mv5k8nxq-r3xfo0em4" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p><b>La señora está enferma ...</b></p>
+<p>y no puede ir a recoger el periódico. Realiza una llamada al kiosko para comunicarlo y, el kioskero, muy amablemente, decide llevárselo a su casa.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-mv5k8nxq-r3xfo0em4" id="tofPMainContainer-idevice-mv5k8nxq-r3xfo0em4">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-mv5k8nxq-r3xfo0em4">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-mv5k8nxq-r3xfo0em4" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-mv5k8nxq-r3xfo0em4">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-mv5k8nxq-r3xfo0em4"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-mv5k8nxq-r3xfo0em4">
+                    <button  id="tofPStartGame-idevice-mv5k8nxq-r3xfo0em4" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-mv5k8nxq-r3xfo0em4">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-mv5k8nxq-r3xfo0em4">
+                    <button id="tofPCheckTest-idevice-mv5k8nxq-r3xfo0em4" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-mv5k8nxq-r3xfo0em4" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        </div>
+        <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/1-vectores.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/12-operaciones-con-vectores.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"><div id="siteUserFooter"> <div><script>
+// HACKeXe - https://hackexe.tiddlyhost.com
+// Maximiza el área de lectura v2.1
+document.addEventListener("DOMContentLoaded", function() {
+    // Definir el nuevo valor de max-width
+    var newMaxWidth = '100%'; // Cambia este valor a '0%' si no quieres que el ancho cambie. Puedes poner otro %, por ejemplo '100%'
+    // Verificar si la página tiene una meta etiqueta con name="generator"
+    var hasGeneratorMeta = document.querySelector('meta[name="generator"]');
+    
+    // Si no existe la etiqueta meta con name="generator", abortar la ejecución del script
+    if (!hasGeneratorMeta) {
+   return;
+    }
+    // Identificar elementos del DOM
+    var $headerBar = $("#header");
+    var $pageTitle = $('h1');
+    var $body = $('body');
+    var $siteNav = $('#siteNav');
+    var $headerOptions = $('#header-options');
+    var $pageCounter = $('.page-counter'); // Selector para el contador de páginas
+    var $content = $('#content'); // Selector para el contenido principal
+    // Añadir transiciones suaves a los elementos que cambian de ancho
+    $content.css('transition', 'max-width 0.5s ease, width 0.5s ease');
+    $body.css('transition', 'max-width 0.5s ease');
+    // Verificar el estado almacenado para la visibilidad de la cabecera y menú
+    var isHeaderHidden = localStorage.getItem('headerHidden') === 'true';
+    // Crear el botón con lógica de flechas y aplicar estilos para fijarlo en la posición deseada
+    var $toggleButton = $('<button id="toggle-nav">' + (isHeaderHidden ? "▼" : "▲") + '</button>').css({
+   'position': 'absolute',
+   'top': '5px',
+   'right': '10px',
+   'z-index': '1000',
+   'background': 'none',
+   'border': 'none',
+   'color': 'black',
+   'fontSize': '1.5rem',
+   'cursor': 'pointer'
+    }).attr('title', isHeaderHidden ? "Restaurar área de lectura" : "Maximizar área de lectura");
+    // Añadir el botón al cuerpo de la página para asegurar que siempre esté visible y fuera del flujo normal de elementos
+    $('body').append($toggleButton);
+    // Función para alternar la visibilidad de la cabecera, el menú, el contador de páginas y otras opciones
+    function toggleHeaderAndMenu() {
+   var currentlyHidden = $headerBar.css('display') === 'none';
+   
+   if (currentlyHidden) {
+  $headerBar.show();
+  $pageTitle.show();
+  $siteNav.show();
+  $headerOptions.show();
+  $pageCounter.show(); // Mostrar el contador de páginas
+  $body.removeClass('no-nav').css('padding-top', '');
+  $content.css('max-width', ''); // Restaurar el ancho original
+  $body.css('max-width', ''); // Restaurar el ancho original
+  $content.css('width', ''); // Restaurar el ancho original
+  $toggleButton.text("▲");
+  $toggleButton.attr('title', "Maximizar área de lectura");
+  localStorage.setItem('headerHidden', false);
+   } else {
+  $headerBar.hide();
+  $pageTitle.hide();
+  $siteNav.hide();
+  $headerOptions.hide();
+  $pageCounter.hide(); // Esconder el contador de páginas
+  $body.addClass('no-nav').css('padding-top', '10px');
+  
+  // Solo aplicar max-width si no es 0%
+  if (newMaxWidth !== '0%') {
+ $content.css('max-width', newMaxWidth); // Expandir el contenido
+ $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+ $content.css('width', newMaxWidth); // Expandir el contenido
+  }
+  
+  $toggleButton.text("▼");
+  $toggleButton.attr('title', "Restaurar área de lectura");
+  localStorage.setItem('headerHidden', true);
+   }
+    }
+    // Asignar evento de clic al botón
+    $toggleButton.on('click', toggleHeaderAndMenu);
+    // Inicializar el estado de la visibilidad de la cabecera, el menú y el contador de páginas
+    if (isHeaderHidden) {
+   $headerBar.hide();
+   $pageTitle.hide();
+   $siteNav.hide();
+   $headerOptions.hide();
+   $pageCounter.hide(); // Inicialmente esconder el contador de páginas
+   $body.addClass('no-nav').css('padding-top', '10px');
+   
+   // Solo aplicar max-width si no es 0%
+   if (newMaxWidth !== '0%') {
+  $content.css('max-width', newMaxWidth); // Expandir el contenido
+  $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+  $content.css('width', newMaxWidth); // Expandir el contenido
+   }
+   
+   $toggleButton.text("▼");
+   $toggleButton.attr('title', "Restaurar área de lectura");
+    } else {
+   $headerBar.show();
+   $pageTitle.show();
+   $siteNav.show();
+   $headerOptions.show();
+   $pageCounter.show(); // Inicialmente mostrar el contador de páginas
+   $body.removeClass('no-nav').css('padding-top', '');
+   $content.css('max-width', ''); // Restaurar el ancho original
+   $body.css('max-width', ''); // Restaurar el ancho original
+   $content.css('width', ''); // Restaurar el ancho original
+   $toggleButton.text("▲");
+   $toggleButton.attr('title', "Maximizar área de lectura");
+    }
+});
+</script>
+</div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

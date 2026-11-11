@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mv5k8nxp-x1hutswc1">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1.2. Operaciones con vectores | Geometría.</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Curso 1º - Enseñanza Bachillerato
+Nombre asignatura/materia: Matemáticas I">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/casestudy/casestudy.js"></script><link rel="stylesheet" href="../idevices/casestudy/casestudy.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mv5k8nxp-x1hutswc1" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Geometría</a>
+</li>
+<li class="current-page-parent"> <a href="../html/1-vectores.html" class="daddy">1. Vectores</a>
+<ul class="other-section">
+<li> <a href="../html/11-conceptos-basicos.html" class="no-ch">1.1. Conceptos básicos</a>
+</li>
+<li class="active"> <a href="../html/12-operaciones-con-vectores.html" class="active no-ch">1.2. Operaciones con vectores</a>
+</li>
+<li> <a href="../html/13-dependencia-lineal.html" class="no-ch">1.3. Dependencia lineal</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/2-rectas.html" class="daddy">2. Rectas</a>
+<ul class="other-section">
+<li> <a href="../html/31-ecuaciones-de-la-recta.html" class="no-ch">3.1. Ecuaciones de la recta</a>
+</li>
+<li> <a href="../html/32-interpretacion-de-la-pendiente.html" class="no-ch">3.2 Interpretación de la pendiente</a>
+</li>
+<li> <a href="../html/33-posiciones-relativas-de-rectas-en-el-plano.html" class="no-ch">3.3 Posiciones relativas de rectas en el plano</a>
+</li>
+<li> <a href="../html/34-distancia-entre-un-punto-y-una-recta.html" class="no-ch">3.4 Distancia entre un punto y una recta</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mv5k8nxp-x1hutswc1" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Geometría.</p>
+<p class="package-subtitle">Vectores. Geometría plana. La recta en el plano.</p></div>
+<div class="page-header"><h1 class="page-title">1.2. Operaciones con vectores</h1></div>
+</header><div id="page-content-page-mv5k8nxp-x1hutswc1" class="page-content">
+<article id="block-mv5k8nxq-ct21spczv" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-81za6w0k3" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-81za6w0k3&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">Como ocurre con cualquier otro tipo de habitante del país de las matemáticas, como por ejemplo los números, los vectores también podemos sumarlos, restarlos, multiplicarlos por un número e, incluso, multiplicarlos entre ellos, como también veremos más adelante.</p>
+<p><img src="../content/resources/arrows-1834859_640.jpg" alt="flecha" title="flecha" width="350" height="233" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">¿Y para qué vale sumar dos vectores?</p>
+<p style="text-align: justify;">Pues tiene mucha utilidad, pero simplemente citaremos para empezar un par de ellas.</p>
+<p style="text-align: justify;">¿Cómo despega un avión? Pues despega, mediante la suma de dos vectores de fuerza, uno correspondiente al desplazamiento hacia adelante (en horizontal) y otro correspondiente a la fuerza que tira de él hacia arriba (en vertical) de propulsión.</p>
+<p style="text-align: justify;">¿Quieres otra aplicación? Un ciclista ha realizado una ruta entre varios pueblos cercanos al suyo, pero de manera improvisada, y ha pinchado en el 5º municipio. Quiere conocer la trayectoria completa, la distancia recorrida y la distancia a la que se encuentra de su casa, puesto que el seguro que tiene, no le cubre asistencia, a distancias a su domicilio superiores a 75 km.</p>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><strong>¿Cómo se suman y/o se restan vectores?</strong></p>
+<p style="text-align: justify;">Gráficamente, la suma (resta) de vectores se puede realizar siguiendo dos métodos distintos. Por supuesto, por ambos métodos, se obtiene el mismo resultado.</p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-1bkn87rid" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Métodos gráficos para realizar la suma de dos vectores.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-x0f8dor2u" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-x0f8dor2u&quot;}">
+<div class="exe-text-template">
+    <table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="color: #008000;"><b>Primer método (Regla del Paralelogramo)</b></span></p>
+<p>Se traslada uno de los vectores (si fuese necesario), paralelamente hacia el otro hasta que sean concurrentes (tengan el mismo origen). Se prolongan los extremos, paralelamente, formando un paralelogramo. Finalmente, se traza la diagonal de dicho paralelogramo, que será el vector suma que buscamos.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><br /></p>
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><span style="color: #008000;"><b>Segundo método (Encadenamiento)</b></span></p>
+<p>Se traslada uno de los vectores (si fuese necesario), paralelamente hacia el otro, hasta colocarlo a continuación del primero. Es decir, justo en el extremo del primero se coloca el origen del segundo, como si estuviésemos colocando eslabones de una cadena. Finalmente, se une el origen del primero con el extremo del segundo, dando lugar al vector suma que buscamos.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;"><b><span style="color: #008000;">Métodos gráficos para realizar la resta de dos vectores.</span></b></p>
+<p style="text-align: justify;">Observemos que restar dos vectores, \(\vec{u}-\vec{v}=\vec{u}+(-\vec{v})\), es lo mismo que sumar el primero con el opuesto del segundo. Así, primero obtendremos el opuesto del segundo, \(-\vec{v}\), y luego realizaremos la suma por cualquiera de los dos métodos anteriormente descritos.</p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-3sp8mz5h9" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/iconogeogebra.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Suma de vectores. Método gráfico.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-hszha3s8m" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-hszha3s8m&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">En el siguiente applet de Geogebra puedes poner en práctica la suma y la resta de vectores. Activa/desactiva la casilla "Mostrar coordenadas" según te interese en cada caso. Para ver uno u otro método, mueve el punto en el deslizador correspondiente.</p>
+<p style="text-align: justify;">Para la resta de vectores no se incluirá ningún applet específico, puesto que no se considera necesario. Antes de realizar la resta, deberás obtener el opuesto del segundo vector y, finalmente realizar la suma.</p>
+<p style="text-align: justify;">Practica cuanto necesites con él.</p>
+<p style="text-align: center;"><iframe width="813" height="321" style="border: 0px;" scrolling="no" src="https://www.geogebra.org/material/iframe/id/2394221/width/813/height/321/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"></iframe></p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-bn6zt2ni6" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Vídeo.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-iktbonocr" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-iktbonocr&quot;}">
+<div class="exe-text-template">
+    <p>Veamos en el siguiente vídeo cómo sería el método gráfico:</p>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/nJjpbLps-qY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+</div>
+</div>
+</div>
+</article><article id="block-mv6erf4k-776rds440" class="box sin-nada">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1791879453523-dwjmbgc3q" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1791879453523-dwjmbgc3q&quot;}">
+<div class="exe-text-template">
+    <p>Dijimos que las operaciones con vectores podían realizarse en los dos mundos: en el geométrico (gráficamente) y en el algebraico, coordenadas (analíticamente).</p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-v55rc5ufn" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Método analítico para realizar la suma (y la resta) de dos vectores.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-jybw0nlo1" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-jybw0nlo1&quot;}">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p>- La <span style="color: #008000;"><b>suma de dos vectores libres </b></span>\(\vec{u}=(u_1,u_2)\)<span style="font-size: 1.05em;"> y </span><span style="font-size: 1.05em;">\(\vec{v}=(v_1,v_2)\)</span><span style="font-size: 1.05em;">  es otro vector libre que se obtiene sumando las componentes de los dos vectores dados:</span></p>
+<p align="center">\(\vec{u}+\vec{v}=(u_1,u_2)+(v_1,v_2)=(u_1+v_1,u_2+v_2)\)</p>
+<p align="justify">- La <span style="color: #008000;"><b>resta de dos vectores libres</b> </span>es igual a la suma del primero con el opuesto del segundo. La resta de dos vectores libres es otro vector que se obtendrá restando las componentes del segundo vector a las del primero:</p>
+<p align="justify" style="text-align: center;">\(\vec{u}-\vec{v}=\vec{u}+(-\vec{v})=(u_1,u_2)+(-v_1,-v_2)=(u_1-v_1,u_2-v_2)\)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-a7zfuk2kd" class="box caja-roja">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/bidio.gif" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Vídeo</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-nsy80yrmb" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-nsy80yrmb&quot;}">
+<div class="exe-text-template">
+    <p>El siguiente vídeo podemos ver el método analítico:</p>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/xIG0v9QtPrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<p></p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-ak54maq8k" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-l8h9ulah4" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-l8h9ulah4&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">¿Cómo expresarías el doble de un desplazamiento determinado, haciendo uso de los vectores? ¿Y quedarte a mitad del camino de un determinado itinerario que hayas previsto? ¿Y realizar el mismo desplazamiento pero en sentido contrario?</p>
+<p style="text-align: justify;">Esto es posible efectuarlo de una forma cómoda mediante la multiplicación por escalar. En el primer caso bastaría con \(2 \cdot \vec{v}\), en el segundo con \(\dfrac{1}{2} \cdot \vec{v}\) y en el tercero con \(- \vec{v}\)</p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-kkg2kih1n" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Definición. Producto de un vector por un escalar.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-6kq77r004" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-6kq77r004&quot;}">
+<div align="left">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;"><span style="text-align: justify;">El </span><b style="text-align: justify;">producto de un vector </b><span style="text-align: justify;">\(\vec{v}\)  </span><b style="text-align: justify;">por un escalar</b><span style="text-align: justify;">, \(k\)  (un número real), es un nuevo vector que escribiremos como \(k \cdot \vec{v}\)</span><span style="text-align: justify;">.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div align="justify"> </div>
+<div align="justify">Este vector tiene las siguientes características:</div>
+<div align="justify"></div>
+<div align="justify">1. Su <span style="color: #008000;"><strong>dirección</strong></span> es la misma que la del vector \(\vec{v}\)  </div>
+<div align="justify">2. Su <strong><span style="color: #008000;">sentido</span></strong> es el mismo que del de \(\vec{v}\)  si \(k\) es positivo y el contrario si \(k\) es negativo.</div>
+<div align="justify">3. Su <span style="color: #008000;"><strong>módulo</strong></span> (longitud) se obtiene multiplicando el valor absoluto de \(k\) por el módulo de \(\vec{v}\): \(|k| \cdot |\vec{v}|\)<i> </i></div>
+<div align="justify"></div>
+<div align="justify"></div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-s1pqtg0sk" class="box caja-azul ejercicio-custom">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_ejercicioresuelto.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejercicio.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-8eh1ngw55" class="idevice_node casestudy db-no-data" data-idevice-path="../idevices/casestudy/" data-idevice-type="casestudy" data-idevice-component-type="json" data-idevice-json-data="{&quot;history&quot;:&quot;&quot;,&quot;activities&quot;:[{&quot;activity&quot;:&quot;&lt;p&gt;Dados los vectores \\(\\vec{u}=(6,-8), \\ \\vec{v}=(0,-5), \\ \\vec{w}=(3,-4)\\) , realiza las siguientes operaciones, gráficamente, en un papel de cuadriculado y calcula las coordenadas.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;(1) &lt;/strong&gt;\\(\\vec{u}+\\vec{w}\\)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;(2) &lt;/strong&gt;\\(\\vec{u}-\\vec{v}+2\\vec{w}\\)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt;  \\(-\\dfrac{1}{2}\\vec{u}\\)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt;  \\(-2\\vec{w}+\\vec{u}\\)&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;(1) \\(\\vec{u}+\\vec{w}=\\mathbf{(9,-12)}\\)&lt;/p&gt;\n&lt;p&gt;(2) \\(\\vec{u}-\\vec{v}+2\\vec{w}=\\mathbf{(12,-11)}\\)&lt;/p&gt;\n&lt;p&gt;(3)  \\(-\\dfrac{1}{2}\\vec{u}=\\mathbf{(-3,4)}\\)&lt;/p&gt;\n&lt;p&gt;(4)  \\(-2\\vec{w}+\\vec{u}=\\mathbf{(0,0)}\\). Esto quiere decir que los vectores \\(-2\\vec{w}\\) y \\(\\vec{u}\\) son opuestos.&lt;/p&gt;&quot;,&quot;buttonCaption&quot;:&quot;Mostrar retroalimentación&quot;}],&quot;textInfoDurationInput&quot;:&quot;&quot;,&quot;textInfoDurationTextInput&quot;:&quot;&quot;,&quot;textInfoParticipantsInput&quot;:&quot;&quot;,&quot;textInfoParticipantsTextInput&quot;:&quot;&quot;}" data-idevice-template="casestudy.html">
+
+</div>
+</div>
+</article><article id="block-mv5k8nxq-0ef2ot3na" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-3ocvhtnad" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-3ocvhtnad&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">Todas las operaciones que hemos visto en la sala de operaciones han dado como resultado un nuevo vector. La suma y la resta de vectores y la multiplicación de un vector por un número, dan como resultado un nuevo vector.</p>
+<p style="text-align: justify;">Pero esto no siempre es así. Vamos a tratar a continuación una operación en la que a partir de multiplicar dos vectores, obtenemos un número (un escalar), no un vector. De ahí que se conozca precisamente con el nombre de <strong>producto escalar</strong>, porque el resultado del producto es un escalar.</p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-0yr4mdr93" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Definición. Producto escalar.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-1needass0" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-1needass0&quot;}">
+<div class="exe-text-template">
+    <table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p align="left">El <b>producto escalar de dos vectores </b>\(\vec{u}=(u_1,u_2)\)  y \(\vec{v}=(v_1,v_2)\)  es un número. La fórmula que permite calcular su valor es:</p>
+<div style="text-align: center;">\(\vec{u} \bullet \vec{v}=|\vec{u}| \cdot |\vec{v}| \cdot \cos{\widehat{\vec{u},\vec{v}}}\)</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: center;"> </div>
+<p align="left">donde \(|\vec{u}|\) y \(|\vec{v}|\) son los módulos de los dos vectores y \(\cos{\widehat{\vec{u},\vec{v}}}\) indica el coseno del ángulo que forman los orígenes de ambos vectores.</p>
+<p align="left"><span style="font-size: medium;"><span style="font-size: large;"><b>·</b></span> </span>La fórmula anterior permite <strong><span style="color: #008000;">obtener el ángulo que forman</span></strong>, conocidas las coordenadas de los dos vectores, simplemente despejando:</p>
+<p align="left">\[\cos{\widehat{\vec{u},\vec{v}}}=\dfrac{\vec{u} \bullet \vec{v}}{|\vec{u}| \cdot |\vec{v}|}\]</p>
+<div style="text-align: center;"> </div>
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p align="left"><span style="font-size: medium;"> </span>Analíticamente, si conocemos las componentes (coordenadas) de los vectores, el <strong>producto escalar</strong> se obtiene como sigue: </p>
+<p align="left">\[\vec{u} \bullet \vec{v}=u_1 \cdot v_1 + u_2 \cdot v_2\]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Algunas <span style="color: #008000;"><strong>propiedades</strong> </span>interesantes del producto escalar son:</p>
+<ol>
+<li>Dos vectores, no nulos, \(\vec{u}=(u_1,u_2)\)  y \(\vec{v}=(v_1,v_2)\) son perpendiculares, si y solo si su producto escalar vale 0. Es decir: </li>
+</ol>
+<p>\[\vec{u} \perp \vec{v} \Longleftrightarrow \vec{u} \bullet \vec{v}=0\]</p>
+<p>    2. El producto escalar de un vector consigo mismo es igual a su módulo al cuadrado. Dicho de otro modo:</p>
+<p>\[\vec{u} \bullet \vec{u}=|\vec{u}|^2\]</p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-4jxhcga0z" class="box caja-azul">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/iconogeogebra.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Producto escalar.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-ly5ptudso" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-ly5ptudso&quot;}">
+<p style="text-align: center;"><iframe width="752" height="443" style="border: 0px;" scrolling="no" src="https://www.geogebra.org/material/iframe/id/2394327/width/752/height/443/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"></iframe></p>
+</div>
+</div>
+</article><article id="block-mv5k8nxq-3xwc5470q" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_v_o_f.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Verdadero o falso.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxq-cch2lpymo" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxq-cch2lpymo&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;},&quot;id&quot;:&quot;idevice-mv5k8nxq-cch2lpymo&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Responde a las preguntas del cuestionario&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;span style=\&quot;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: small;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt; Si dos vectores son perpendiculares, su producto escalar vale 0.&lt;/span&gt; &lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;Verdadero&quot;,&quot;2&quot;:&quot;&lt;p&gt;&lt;b&gt;Es correcto&lt;/b&gt;, porque si son perpendiculares forman un ángulo de \\(90º\\) y el coseno de \\(90º\\) vale \\(0\\).&lt;/p&gt;\n&lt;p&gt;Por tanto, en la fórmula tendríamos:&lt;/p&gt;\n&lt;p&gt; \\(\\vec{u} \\bullet \\vec{v}=|\\vec{u}| \\cdot |\\vec{v}| \\cdot \\cos{\\widehat{\\vec{u},\\vec{v}}}=|\\vec{u}| \\cdot |\\vec{v}| \\cdot \\cos{90º}=|\\vec{u}| \\cdot |\\vec{v}| \\cdot 0 =0\\) &lt;/p&gt;&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Falso&quot;,&quot;2&quot;:&quot;&lt;p&gt;\n&lt;b&gt;No es correcto.&lt;/b&gt; Piénsalo bien. Observa la fórmula del producto escalar e inténtalo de nuevo. \n&lt;/p&gt;\n&quot;}],&quot;hint&quot;:&quot;Puedes apoyarte en el applet de Geogebra, probando con los vectores ortogonales que tú elijas. Ello te ayudará a decidir la respuesta.\n&quot;,&quot;id&quot;:&quot;1791880584088-Z8DLW&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;span style=\&quot;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12pt;\&quot;&gt;El producto escalar de&lt;/span&gt; \\(\\vec{u}=(2,-1)\\) y \\(\\vec{v}=(1,-5)\\) &lt;span style=\&quot;font-family: verdana, geneva, sans-serif;\&quot;&gt;es igual a 8.&lt;/span&gt;&lt;/p&gt;\n&lt;ul&gt;&lt;/ul&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Verdadero&quot;,&quot;2&quot;:&quot;&lt;b&gt;No es correcto.&lt;/b&gt; Revisa los cálculos.\n&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Falso&quot;,&quot;2&quot;:&quot;&lt;p&gt;Es correcto. Porque&lt;/p&gt;\n&lt;p&gt;\\(\\vec{u} \\bullet \\vec{v}=(2,-1)\\cdot(1,-5)=2\\cdot1+(-1)\\cdot(-5)=7\\)&lt;/p&gt;&quot;}],&quot;hint&quot;:&quot;Configura el applet de Geogebra con estos vectores y te ayudará a obtener la respuesta.\n&quot;,&quot;id&quot;:&quot;1791880584088-0XW92&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;&lt;span style=\&quot;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: small;\&quot;&gt;&lt;span style=\&quot;font-family: verdana, geneva, sans-serif; font-size: 12pt;\&quot;&gt;El producto escalar de&lt;/span&gt;&lt;/span&gt;&lt;span style=\&quot;font-family: verdana, geneva, sans-serif; font-size: 12pt;\&quot;&gt; \\(\\vec{u}=(-5,-1)\\) y \\(\\vec{v}=(2,3)\\) es igual a -13 y el ángulo que&lt;/span&gt; &lt;span style=\&quot;font-family: verdana, geneva, sans-serif;\&quot;&gt;forman vale 135º&lt;/span&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;Verdadero&quot;,&quot;2&quot;:&quot;&lt;b&gt;Es correcto.&lt;/b&gt; Basta configurar el applet de Geogebra con estos vectores y lo comprobarás. También puedes hacer uso de las fórmulas correspondientes. ¡Prueba de las dos maneras!\n&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Falso&quot;,&quot;2&quot;:&quot;&lt;b&gt;No es correcto.&lt;/b&gt; ¡Inténtalo de nuevo!\n&quot;}],&quot;id&quot;:&quot;1791880584088-G8S2M&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container">
+  <div class="game-evaluation-ids js-hidden" data-id="idevice-mv5k8nxq-cch2lpymo" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-mv5k8nxq-cch2lpymo" class="form-IDevice" data-id="idevice-mv5k8nxq-cch2lpymo">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Responde a las preguntas del cuestionario</p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-mv5k8nxq-cch2lpymo">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-mv5k8nxq-cch2lpymo" style="display:none;">
+                      <button  id="frmStartGame-idevice-mv5k8nxq-cch2lpymo" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-mv5k8nxq-cch2lpymo" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-mv5k8nxq-cch2lpymo" > </div>
+                        <div id="frmCover-idevice-mv5k8nxq-cch2lpymo" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-mv5k8nxq-cch2lpymo" class="form-results-container inline">
+                        <div id="form-score-idevice-mv5k8nxq-cch2lpymo" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-mv5k8nxq-cch2lpymo" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-mv5k8nxq-cch2lpymo" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-mv5k8nxq-cch2lpymo" data-pass-rate="" />
+                        <input id="form-button-reset-idevice-mv5k8nxq-cch2lpymo" type="button" value="Reiniciar"
+                            data-id="idevice-mv5k8nxq-cch2lpymo" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-mv5k8nxq-cch2lpymo" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-mv5k8nxq-cch2lpymo" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+                
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/11-conceptos-basicos.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/13-dependencia-lineal.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"><div id="siteUserFooter"> <div><script>
+// HACKeXe - https://hackexe.tiddlyhost.com
+// Maximiza el área de lectura v2.1
+document.addEventListener("DOMContentLoaded", function() {
+    // Definir el nuevo valor de max-width
+    var newMaxWidth = '100%'; // Cambia este valor a '0%' si no quieres que el ancho cambie. Puedes poner otro %, por ejemplo '100%'
+    // Verificar si la página tiene una meta etiqueta con name="generator"
+    var hasGeneratorMeta = document.querySelector('meta[name="generator"]');
+    
+    // Si no existe la etiqueta meta con name="generator", abortar la ejecución del script
+    if (!hasGeneratorMeta) {
+   return;
+    }
+    // Identificar elementos del DOM
+    var $headerBar = $("#header");
+    var $pageTitle = $('h1');
+    var $body = $('body');
+    var $siteNav = $('#siteNav');
+    var $headerOptions = $('#header-options');
+    var $pageCounter = $('.page-counter'); // Selector para el contador de páginas
+    var $content = $('#content'); // Selector para el contenido principal
+    // Añadir transiciones suaves a los elementos que cambian de ancho
+    $content.css('transition', 'max-width 0.5s ease, width 0.5s ease');
+    $body.css('transition', 'max-width 0.5s ease');
+    // Verificar el estado almacenado para la visibilidad de la cabecera y menú
+    var isHeaderHidden = localStorage.getItem('headerHidden') === 'true';
+    // Crear el botón con lógica de flechas y aplicar estilos para fijarlo en la posición deseada
+    var $toggleButton = $('<button id="toggle-nav">' + (isHeaderHidden ? "▼" : "▲") + '</button>').css({
+   'position': 'absolute',
+   'top': '5px',
+   'right': '10px',
+   'z-index': '1000',
+   'background': 'none',
+   'border': 'none',
+   'color': 'black',
+   'fontSize': '1.5rem',
+   'cursor': 'pointer'
+    }).attr('title', isHeaderHidden ? "Restaurar área de lectura" : "Maximizar área de lectura");
+    // Añadir el botón al cuerpo de la página para asegurar que siempre esté visible y fuera del flujo normal de elementos
+    $('body').append($toggleButton);
+    // Función para alternar la visibilidad de la cabecera, el menú, el contador de páginas y otras opciones
+    function toggleHeaderAndMenu() {
+   var currentlyHidden = $headerBar.css('display') === 'none';
+   
+   if (currentlyHidden) {
+  $headerBar.show();
+  $pageTitle.show();
+  $siteNav.show();
+  $headerOptions.show();
+  $pageCounter.show(); // Mostrar el contador de páginas
+  $body.removeClass('no-nav').css('padding-top', '');
+  $content.css('max-width', ''); // Restaurar el ancho original
+  $body.css('max-width', ''); // Restaurar el ancho original
+  $content.css('width', ''); // Restaurar el ancho original
+  $toggleButton.text("▲");
+  $toggleButton.attr('title', "Maximizar área de lectura");
+  localStorage.setItem('headerHidden', false);
+   } else {
+  $headerBar.hide();
+  $pageTitle.hide();
+  $siteNav.hide();
+  $headerOptions.hide();
+  $pageCounter.hide(); // Esconder el contador de páginas
+  $body.addClass('no-nav').css('padding-top', '10px');
+  
+  // Solo aplicar max-width si no es 0%
+  if (newMaxWidth !== '0%') {
+ $content.css('max-width', newMaxWidth); // Expandir el contenido
+ $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+ $content.css('width', newMaxWidth); // Expandir el contenido
+  }
+  
+  $toggleButton.text("▼");
+  $toggleButton.attr('title', "Restaurar área de lectura");
+  localStorage.setItem('headerHidden', true);
+   }
+    }
+    // Asignar evento de clic al botón
+    $toggleButton.on('click', toggleHeaderAndMenu);
+    // Inicializar el estado de la visibilidad de la cabecera, el menú y el contador de páginas
+    if (isHeaderHidden) {
+   $headerBar.hide();
+   $pageTitle.hide();
+   $siteNav.hide();
+   $headerOptions.hide();
+   $pageCounter.hide(); // Inicialmente esconder el contador de páginas
+   $body.addClass('no-nav').css('padding-top', '10px');
+   
+   // Solo aplicar max-width si no es 0%
+   if (newMaxWidth !== '0%') {
+  $content.css('max-width', newMaxWidth); // Expandir el contenido
+  $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+  $content.css('width', newMaxWidth); // Expandir el contenido
+   }
+   
+   $toggleButton.text("▼");
+   $toggleButton.attr('title', "Restaurar área de lectura");
+    } else {
+   $headerBar.show();
+   $pageTitle.show();
+   $siteNav.show();
+   $headerOptions.show();
+   $pageCounter.show(); // Inicialmente mostrar el contador de páginas
+   $body.removeClass('no-nav').css('padding-top', '');
+   $content.css('max-width', ''); // Restaurar el ancho original
+   $body.css('max-width', ''); // Restaurar el ancho original
+   $content.css('width', ''); // Restaurar el ancho original
+   $toggleButton.text("▲");
+   $toggleButton.attr('title', "Maximizar área de lectura");
+    }
+});
+</script>
+</div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

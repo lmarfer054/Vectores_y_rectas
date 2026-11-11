@@ -1,0 +1,759 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1. Conceptos básicos | MT1 - Tema 3.3: Geometría: Vectores. Geometría plana. La recta en el plano. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-auto-math" id="exe-node-36"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">MT1 - Tema 3.3: Geometría: Vectores. Geometría plana. La recta en el plano.</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Geometría: Vectores. Geometría plana. La recta en el plano</a></li>
+   <li class="current-page-parent"><a href="1_vectores.html" class="current-page-parent daddy">1. Vectores</a>
+   <ul>
+      <li id="active"><a href="11_conceptos_bsicos.html" class="active no-ch">1.1. Conceptos básicos</a></li>
+      <li><a href="12_operaciones_con_vectores.html" class="no-ch">1.2. Operaciones con vectores</a></li>
+      <li><a href="13_dependencia_lineal.html" class="no-ch">1.3. Dependencia lineal</a></li>
+   </ul>
+   </li>
+   <li><a href="2_rectas.html" class="daddy">2. Rectas</a>
+   <ul class="other-section">
+      <li><a href="31_ecuaciones_de_la_recta.html" class="no-ch">3.1. Ecuaciones de la recta</a></li>
+      <li><a href="32_interpretacin_de_la_pendiente.html" class="no-ch">3.2 Interpretación de la pendiente</a></li>
+      <li><a href="33_posiciones_relativas_de_rectas_en_el_plano.html" class="no-ch">3.3 Posiciones relativas de rectas en el plano</a></li>
+      <li><a href="34_distancia_entre_un_punto_y_una_recta.html" class="no-ch">3.4 Distancia entre un punto y una recta</a></li>
+   </ul>
+   </li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="1_vectores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_operaciones_con_vectores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">1.1. Conceptos básicos</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id79">
+<div class="iDevice emphasis0">
+<div id="ta79_1" class="block iDevice_content">
+<p>Vamos a comenzar a formalizar el concepto de vector haciendo uso de nuevo de los desplazamientos.</p>
+<p>Supongamos que vamos circulando por la única carretera existente entre dos ciudades, ciudad \(\mathrm{A}\) y ciudad \(\mathrm{B}\).</p>
+<p style="text-align: center;"><img src="road-210913_640.jpg" alt="carretera" title="carretera" width="350" height="233" /></p>
+<p>Tenemos dos posibles opciones, a las que llamamos vectores, que no son más que distintas maneras de orientar el segmento \(\overset{\vdash \hspace{-.1em} \rule[1.15mm]{1.8 mm}{0.15mm} \hspace{-.1em} \dashv}{\mathrm{AB}} \) .</p>
+<p><u>1</u>. Circulamos desde \(\mathrm{A}\) hacia \(\mathrm{B}\). Lo representamos como vector \(\overrightarrow{\mathrm{AB}} \). El origen es el punto \(\mathrm{A}\) y el extremo el punto \(\mathrm{B}\). </p>
+<p><u>2</u>. Circulamos desde B hacia \(\mathrm{A}\). Lo representamos como vector \(\overrightarrow{\mathrm{BA}} \) . El origen es el punto \(\mathrm{B}\) y el extremo el punto \(\mathrm{A}\). </p>
+<p>En los dos casos, la distancia entre los puntos \(\mathrm{A}\) y \(\mathrm{B}\) (ciudades \(\mathrm{A}\) y \(\mathrm{B}\)) es la misma y se denomina módulo del vector.</p>
+<p>La situación presentada es una de las infinitas ocasiones en las que necesitamos hacer uso de los vectores.</p>
+<p style="text-align: center;"></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id169">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Definición. Vector fijo.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta169_130_7" class="block iDevice_content">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p>Un <b>vector fijo </b>no es más que un segmento orientado entre dos puntos que denotaremos por \(\overrightarrow{\mathrm{AB}} \). El punto \(\mathrm{A}\) se llama <b>origen </b>y el \(\mathrm{B}\) <b>extremo</b>.</p>
+<p>Atributos característicos de un vector fijo son:<b></b></p>
+<p><b>* Dirección:</b> Es la recta que pasa por los puntos \(\mathrm{A}\) y \(\mathrm{B}\)<b></b></p>
+<p><b>* Sentido</b>: Es el que va del origen al extremo del vector<b></b></p>
+<p><b>* Módulo</b>: Es la longitud del segmento \(\overset{\vdash \hspace{-.1em} \rule[1.15mm]{1.8 mm}{0.15mm} \hspace{-.1em} \dashv}{\mathrm{AB}} \). Se representa \(\lvert\overrightarrow{\mathrm{AB}}\rvert \).</p>
+<p>Cuando dos <b>vectores fijos</b> tienen iguales la dirección, el módulo y el sentido diremos que son <b>equipolentes</b> <b>(o equivalentes)</b>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<ul></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id81">
+<div class="iDevice emphasis0">
+<div id="ta81_1" class="block iDevice_content">
+<p style="text-align: center;"><iframe width="900" height="700" style="border: 0px;" scrolling="no" title="" src="https://www.geogebra.org/material/iframe/id/hKxcrkmR/width/1280/height/887/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"></iframe></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice" id="id167">
+<div class="iDevice emphasis0" >
+<div id="ta167_366_2" class="block iDevice_content">
+<div class="exe-text"><table border="0" style="width: 100%; background-color: #edfcfc;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<h3><img src="icon_yoneco.png" width="60" height="60" alt="" />  <span style="color: #0000ff;">Curiosidad</span></h3>
+<h5><span style="color: #000000;">¿"Dirección" prohibida o "sentido" prohibido?</span></h5>
+<p>A veces, cuando nos expresamos en el lenguaje coloquial, solemos relajarnos y perder el rigor a la hora de hablar; incluso, en ocasiones, podemos generar confusiones y conflictos innecesarios. Estas confusiones suelen aparecer, por ejemplo, cuando nos referimos a los términos <strong>dirección y sentido</strong>.</p>
+<p>Habitualmente, solemos decir que vamos en "dirección contraria o dirección prohibida", cuando vemos la siguiente señal. <br />Esta afirmación es incorrecta, esa señal indica "sentido prohibido" no "dirección prohibida". Indica que no se puede continuar hacia adelante, en el sentido de la marcha que llevamos.<br />  <br /> <img src="pngegg_(3).png" width="170" height="179" alt="" style="display: block; margin-left: auto; margin-right: auto;" /><br />No podemos decir que vamos en "dirección contraria" porque simplemente no existen direcciones contrarias. Hay múltiples, infinitas, direcciones. Podemos llevar la misma dirección que otro vehículo, persona, calle o se puede llevar una dirección distinta pero no podemos llevar nunca una dirección contraria a otra. Dos calles paralelas tienen la misma dirección, es decir, la dirección es la recta sobre la que están. Cuando en esa línea colocamos una flecha, entonces estamos definiendo el sentido.<br /> <br />Así, mientras hay infinitas direcciones posibles, sentidos sólo puede haber dos, así que sí se puede hablar de sentido contrario. Dos vehículos que circulan de Los Barrios a Jerez, por la A-381, y de Jerez a Los Barrios, respectivamente, circulan en la misma dirección pero en sentidos contrarios.<br /> <br /> <br /> <br />Toma nota de este detalle, verás como deberás corregir a más de uno/a y a más de dos. <strong>¡Hablemos con propiedad, gracias a las Matemáticas!</strong></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id170">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Definición. Vector libre.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta170_130_7" class="block iDevice_content">
+<div id="ta221_38_2" class="block" style="display: block;">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">Un <b>vector libre </b>está compuesto por un vector fijo y todos los vectores equipolentes a él. Cada uno de estos vectores fijos es un representante del vector libre.</td>
+</tr>
+</tbody>
+</table>
+<p>Dicho de otro modo, un vector libre no es más que un vector fijo que se puede trasladar libre y paralelamente a sí mismo. Todos los representantes de un vector libre, tienen la misma dirección, el mismo sentido y el mismo módulo.</p>
+<p>Los <b>vectores libres</b> se escriben entre corchetes \([\overrightarrow{\mathrm{AB}}] \) o con letras minúsculas, \(\vec{u}\), ya que no hay dependencia de su origen y extremo, cualquier representante lo identifica.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id88">
+<div class="iDevice emphasis0">
+<div id="ta88_1" class="block iDevice_content">
+<p>¿Cuántos vectores libres has obtenido con la agrupación anterior?</p>
+<p>Cuatro, ¿verdad?. Los 17 vectores fijos, han quedado reducidos a tan sólo cuatro vectores libres. O sea, que en principio hay muchos vectores fijos pero en muchos casos representan el mismo vector libre, es decir, representan el mismo desplazamiento.</p>
+<p>Hasta aquí bien, hemos visto la cara geométrica de los vectores. A continuación, veremos la cara algebraica de los mismos y, de aquí en adelante, trabajaremos en paralelo desde ambos mundos: "el geométrico (dibujos) y el algebraico (coordenadas)"</p>
+<p>Ya sabes que los vectores indican desplazamientos desde un punto origen a un punto extremo. <b>Desplazamientos que tienen dos componentes: la componente horizontal (hacia la derecha o hacia la izquierda) y la componente vertical (hacia arriba o hacia abajo).</b> Cada uno de ellos es realmente un vector y la suma de ambos vectores indicará el desplazamiento total. Esta es la base sobre la que se sustenta la introducción de las coordenadas de los vectores y que representa la conexión entre los dos mundos: dibujos y coordenadas.</p>
+<p> </p>
+<div style="text-align: center;">
+<table style="border: 0pt solid #000000;" align="center" border="0">
+<tbody>
+<tr>
+<td>
+<div style="text-align: center;"><img src="Coordenadas.jpg" height="291" width="482" /></div>
+<div style="text-align: center;"></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: xx-small;"><b>Las coordenadas del vector v son (+6,-4) Desplazamientos: Horizontal x= +6 (hacia la derecha), Vertical y=-4 (hacia abajo)</b></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Si observas con detenimiento la escena anterior de Descartes (Vectores libres), comprobarás que lo que ocurre es que todos los vectores equipolentes representan exactamente los mismos desplazamientos, todos tienen las mismas coordenadas. Partiendo de distintos orígenes pero, al fin y al cabo, los mismos desplazamientos.</p>
+<p> </p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id89">
+<div class="iDevice emphasis0">
+<div id="ta89_85" class="block iDevice_content">
+<p style="text-align: center;"><iframe width="778" height="389" style="border: 0px;" scrolling="no" src="https://www.geogebra.org/material/iframe/id/2394401/width/778/height/389/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"></iframe></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id90">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="question">
+<form name="multi-choice-form-90_2" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion90_2" class="block question iDevice_content">
+<p>Apoyándote en el applet de Geogebra anterior, realiza las siguientes actividades:</p>
+<p><b>(1) </b>Desplazando únicamente el extremo del vector \(\vec{v}\), obtén un vector equipolente a \(\vec{u}\) </p>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i90_5" class="sr-av"><a href="#answer-90_5">Opción 1</a></label><input type="radio" name="option90_2" id="i90_5" class="exe-radio-option exe-radio-option-0-1-90_2-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-90_5"><a name="answer-90_5"></a>
+<div id="taans90_5" class="block iDevice_content">
+Comprueba si lo has realizado correctamente.
+
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b90_2" class="feedback js-hidden"><a name="sa0b90_2"></a>
+<div id="taf90_5" class=" iDevice_content">
+<p>Un vector equipolente a \(\vec{u}\), tendrá la misma dirección, el mismo sentido y el mismo módulo (longitud) que \(\vec{u}\). Por tanto tendrá sus mismas coordenadas.</p>
+<p><img src="Auto-Coor-1.jpg" height="181" width="252" /></p>
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-90_5">Opción correcta</a><span> (<a href="#sa0b90_2">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+<div class="question">
+<form name="multi-choice-form-90_48" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion90_48" class="block question iDevice_content">
+<p><b>(2) </b>Representa los vectores \(\vec{u}=(-30,8)\) y \(\vec{v}=(30,0)\)</p>
+</div>
+<div class="iDevice_hint">
+<h4 class="iDevice_hint_title">Sugerencia</h4>
+<div class="iDevice_hint_content js-hidden">
+<div id="tahint90_48" class="block iDevice_content">
+Desplaza los orígenes y extremos de los vectores representados.
+
+</div>
+</div>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i90_51" class="sr-av"><a href="#answer-90_51">Opción 1</a></label><input type="radio" name="option90_48" id="i90_51" class="exe-radio-option exe-radio-option-0-1-90_48-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-90_51"><a name="answer-90_51"></a>
+<div id="taans90_51" class="block iDevice_content">
+Comprueba si lo has realizado correctamente.
+
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b90_48" class="feedback js-hidden"><a name="sa0b90_48"></a>
+<div id="taf90_51" class=" iDevice_content">
+<p><img src="Auto-Coor-2.jpg" height="290" width="766" /></p>
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-90_51">Opción correcta</a><span> (<a href="#sa0b90_48">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+<div class="question">
+<form name="multi-choice-form-90_58" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion90_58" class="block question iDevice_content">
+<p><b>(3) </b>El vector representado en la imagen <img src="Auto-Coor-3.jpg" height="105" width="75" /> es:</p>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i90_61" class="sr-av"><a href="#answer-90_61">Opción 1</a></label><input type="radio" name="option90_58" id="i90_61" class="exe-radio-option exe-radio-option-0-3-90_58-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-90_61"><a name="answer-90_61"></a>
+<div id="taans90_61" class="block iDevice_content">
+<p>\((0,5)\)</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i90_77" class="sr-av"><a href="#answer-90_77">Opción 2</a></label><input type="radio" name="option90_58" id="i90_77" class="exe-radio-option exe-radio-option-1-3-90_58-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-90_77"><a name="answer-90_77"></a>
+<div id="taans90_77" class="block iDevice_content">
+<p>\((4.5,0)\)</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i90_80" class="sr-av"><a href="#answer-90_80">Opción 3</a></label><input type="radio" name="option90_58" id="i90_80" class="exe-radio-option exe-radio-option-2-3-90_58-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-90_80"><a name="answer-90_80"></a>
+<div id="taans90_80" class="block iDevice_content">
+<p>\((0,4.5)\)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b90_58" class="feedback js-hidden"><a name="sa0b90_58"></a>
+<div id="taf90_61" class=" iDevice_content">
+<p>
+<b>No es correcto.</b> 
+</p>
+<p>
+Fíjate bien en los desplazamientos horizontal y vertical. ¡Inténtalo de nuevo!
+</p>
+
+</div>
+</div>
+<div id="sa1b90_58" class="feedback js-hidden"><a name="sa1b90_58"></a>
+<div id="taf90_77" class=" iDevice_content">
+<p>
+<b>No es correcto.</b> 
+</p>
+<p>
+Si observas el vector, verás que no realiza ningún desplazamiento en horizontal, por tanto su primera componente (coordenada) debería valer 0.
+¡Inténtalo de nuevo!
+</p>
+
+</div>
+</div>
+<div id="sa2b90_58" class="feedback js-hidden"><a name="sa2b90_58"></a>
+<div id="taf90_80" class=" iDevice_content">
+<p><b>Es correcto.</b></p>
+<p>Desplazamiento horizontal: \(0\)  y Desplazamiento vertical: \(+4.5\) ("cuatro cuadrados y medio hacia arriba")</p>
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-90_61">Incorrecto</a><span> (<a href="#sa0b90_58">Retroalimentación</a>)</span></li>
+<li><a href="#answer-90_77">Incorrecto</a><span> (<a href="#sa1b90_58">Retroalimentación</a>)</span></li>
+<li><a href="#answer-90_80">Opción correcta</a><span> (<a href="#sa2b90_58">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id51">
+<div class="iDevice emphasis0">
+<div id="ta51_1" class="block iDevice_content">
+<p>Para que un determinado servicio web, como puede ser Google Maps o cualquier otro servidor de mapas o un GPS, que tengamos en nuestro vehículo o en el propio móvil, nos pueda proporcionar una ruta en coche para <em>"Ir desde: " "Hasta: "</em> es necesario, previamente, etiquetar correctamente en la cartografía el/los sentido/s del tráfico permitido/s. De nuevo, son importantes los vectores en nuestras vidas así como el sentido de los mismos.</p>
+<div align="center"> </div>
+<table style="width: 639px;" border="0" align="left">
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff;">
+<div align="center"> </div>
+<div style="text-align: center;"><img src="476f6f676c655f4d6170732d53656e7469646f5f64656c5f5472c3a16669636f.jpg" width="595" height="361" /></div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; border: 1px solid #ffffff;"><strong><span style="font-size: xx-small;">Vectores: sentido del tráfico en la cartografía. Imprescindible para el cálculo de rutas en los navegadores</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Si este trabajo sobre la cartografía, no se ha realizado correctamente o, por ejemplo, el Ayuntamiento de una ciudad ha cambiado el sentido del tráfico de una determinada calle y la cartografía no lo ha actualizado, nos podemos encontrar con que el navegador de nuestro coche nos indique:</p>
+<p><em>"Gire a la derecha"</em> y ... <em>¡sorpresa!</em> no es posible porque es sentido prohibido.</p>
+<p>Fíjate hasta qué punto, es importante el sentido de los vectores en el cálculo de itinerarios/rutas.</p>
+<p>Y ya que estamos con calles y rutas ...</p>
+<p><strong>¿Podrías decir cuánto mide una calle?</strong></p>
+<p>Efectivamente, la longitud del segmento que hay de un extremo a otro de la misma. Pues este es exactamente el concepto de módulo de un vector.</p>
+<p><strong>¿Y la distancia que recorres de un determinado punto a otro? ¿cómo la obtendrías?</strong></p>
+<p>Pues definiendo un vector, entre los puntos origen y destino (extremo) y calculando el módulo del mismo.</p>
+<p> </p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id171">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Definición. Módulo.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta171_130_7" class="block iDevice_content">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p><b><span style="font-size: medium;">·</span></b> El <b>módulo </b>(o longitud) de un vector \(\vec{v}=(v_1,v_2)\)  es igual a la longitud del segmento que une su origen y su extremo. El módulo, puede ser calculado de un modo sencillo (haciendo uso del Teorema de Pitágoras), mediante la siguiente fórmula:</p>
+<div style="text-align: center;">\(|\vec{v}|=\sqrt{v_1^2+v_2^2}\)</div>
+<div style="text-align: center;"> </div>
+<p><b><span style="font-size: medium;">·</span></b> Un vector es <b>unitario </b>si su módulo vale \(1\). A partir de cualquier vector, \(\vec{v}\), podemos obtener otro vector, \(\vec{u}\), que tenga la misma dirección y el mismo sentido que \(\vec{v}\) pero que sea unitario, es decir, con módulo igual a \(1\). Basta dividir, cada una de las componentes (coordenadas) de \(\vec{v}\) entre el módulo de \(\vec{v}\), \(|\vec{v}|\) .  </p>
+<p></p>
+<div style="text-align: center;">\(\vec{u}=\dfrac{\vec{v}}{|\vec{v}|}\) </div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id53">
+<div class="iDevice emphasis0">
+<div id="ta53_85" class="block iDevice_content">
+<p>Veamos en el siguiente vídeo cómo se calcula el módulo de un vector y cuál es su aplicación más directa:</p>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/UHR__NIsbPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id54">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta54_21" class="block instructions iDevice_content">
+<p>
+<b></b>
+</p>
+<p>
+<b>La prensa nuestra de cada día.</b>
+</p>
+
+</div>
+
+    <div class="activity" id="activity-54_22"><form name="cloze-form-54_22" action="#" class="activity-form cloze-activity-form"><div id="cloze54_22"><input type="hidden" name="clozeFlag54_22.strictMarking" id="clozeFlag54_22.strictMarking" value="false"/>
+<input type="hidden" name="clozeFlag54_22.checkCaps" id="clozeFlag54_22.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag54_22.instantMarking" id="clozeFlag54_22.instantMarking" value="false"/>
+<input type="hidden" name="clozeVar54_22.feedbackId" id="clozeVar54_22.feedbackId" value="ta54_23"/>
+<p>
+Una señora acude cada mañana a recoger el periódico a un kiosko de 
+prensa que se ubica cerca de casa. Para ello, debe caminar, al salir de 
+su vivienda ocho metros en dirección Este (hacia la derecha) y seis metros en
+dirección Sur (hacia abajo). 
+</p>
+<p>
+El vector que describe el trayecto diario de esta señora es el (           <label for="clozeBlank54_22.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank54_22.0" style="width:1ch" /><span style="display:none" id="clozeAnswer54_22.0">JXUwMDYw
+</span>           ,           <label for="clozeBlank54_22.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank54_22.1" style="width:2ch" /><span style="display:none" id="clozeAnswer54_22.1">JXUwMDc1JXUwMDFi
+</span>           ).  
+</p>
+<p>
+En total recorre            <label for="clozeBlank54_22.2" class="sr-av">Rellenar huecos (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank54_22.2" style="width:2ch" /><span style="display:none" id="clozeAnswer54_22.2">JXUwMDY5JXUwMDAx
+</span>            metros.
+</p>
+<div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit54_22" value="Enviar"  id="submit54_22" />
+<input type="button" name="restart54_22" value="Reiniciar" style="display:none" id="restart54_22" onclick="$exe.cloze.restart('54_22')" />
+ <input type="button" name="54_22showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton54_22" onclick="$exe.cloze.fillInputs('54_22')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore54_22"></div></div></form></div>
+    <div id="ta54_23" class="feedback js-feedback iDevice_content" style="display:none">
+Cuidado que no es tan simple como parece. ¡Léelo detenidamente! Puedes ayudarte del applet de Geogebra anterior.
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id172">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Definiciones. Vectores opuestos y concurrentes.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta172_130_7" class="block iDevice_content">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="15">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<p>Dos tipos de vectores especiales son los vectores <strong>opuestos</strong> y los <strong>concurrentes</strong>:</p>
+<p><span style="font-size: medium;"><strong>·</strong></span> El<strong> opuesto</strong> de un vector \(\vec{v}=(v_1,v_2)\)  es otro vector que tiene el mismo módulo y dirección que \(\vec{v}\) , pero distinto sentido.</p>
+<p>Se representa por \(-\vec{v}\) y sus coordenadas son  \(-\vec{v}=(-v_1,-v_2)\) </p>
+<p><span style="font-size: medium;"><strong>· </strong></span>Dos vectores son <strong>concurrentes</strong> si tienen el mismo origen, es decir, si parten del mismo punto.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper TrueFalseIdevice em_iDevice em_iDevice_question" id="id56">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_16" class="block iDevice_content">
+<p>
+<b>La señora está enferma ...</b>
+</p>
+<p>
+y no puede ir a recoger el periódico. Realiza una llamada al kiosko para comunicarlo y, el kioskero, muy amablemente, decide llevárselo a su casa.
+</p>
+
+</div>
+<div class="question">
+<form name="true-false-form-0b56" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 1</h3>
+<div id="taquestion0b56" class="block iDevice_content">
+<b>(1) </b>El vector que describirá el desplazamiento del señor, desde el kiosco hasta la vivienda de la señora, es opuesto al vector que describe el trayecto diario de la señora desde su domicilio hasta el kiosko.
+
+</div>
+<div class="iDevice_hint">
+<h4 class="iDevice_hint_title">Sugerencia</h4>
+<div class="iDevice_hint_content js-hidden">
+¡Lee de nuevo la Autoevaluación anterior! Puedes ayudarte del applet de Geogebra que está más arriba en esta misma página.
+</div>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true0b56"><input type="radio" name="option0b56" id="true0b56" class="exe-radio-option exe-radio-option-0-2-0b56-truefalse" /> Verdadero</label> 
+<label for="false0b56"><input type="radio" name="option0b56" id="false0b56" class="exe-radio-option exe-radio-option-1-2-0b56-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s0b56" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s0b56-result" class="right">Verdadero</strong></p>
+Es el mismo pero en sentido contrario.
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-1b56" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 2</h3>
+<div id="taquestion1b56" class="block iDevice_content">
+<p><b>(2) </b>Las coordenadas del vector desplazamiento del kioskero son \((8,6)\)</p>
+</div>
+<div class="iDevice_hint">
+<h4 class="iDevice_hint_title">Sugerencia</h4>
+<div class="iDevice_hint_content js-hidden">
+¡Lee de nuevo la Autoevaluación anterior! Puedes ayudarte del applet de Geogebra que está más arriba en esta misma página.
+</div>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true1b56"><input type="radio" name="option1b56" id="true1b56" class="exe-radio-option exe-radio-option-0-2-1b56-truefalse" /> Verdadero</label> 
+<label for="false1b56"><input type="radio" name="option1b56" id="false1b56" class="exe-radio-option exe-radio-option-1-2-1b56-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s1b56" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s1b56-result" class="wrong">Falso</strong></p>
+<p>Los desplazamientos que realizan vienen descritos por vectores opuestos. Por tanto, el opuesto de \((8,-6)\) [Vector del trayecto de la señora hacia el kiosko] es el \((-8,6)\) [Vector del trayecto del kioskero a la casa de la señora]. Ésto es, \(6\) metros hacia el Norte y \(8\) metros hacia el Oeste.</p>
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-2b56" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 3</h3>
+<div id="taquestion2b56" class="block iDevice_content">
+<b>(3) </b>Justo en el momento que el kioskero sale del kiosko para ir a casa de la señora, un cliente sale del kiosko caminando veinte metros en dirección Sur. Los vectores desplazamientos del kioskero y del cliente son concurrentes. 
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true2b56"><input type="radio" name="option2b56" id="true2b56" class="exe-radio-option exe-radio-option-0-2-2b56-truefalse" /> Verdadero</label> 
+<label for="false2b56"><input type="radio" name="option2b56" id="false2b56" class="exe-radio-option exe-radio-option-1-2-2b56-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s2b56" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s2b56-result" class="right">Verdadero</strong></p>
+Es correcto, porque conocemos que el origen de ambos trayectos es el mismo, el kiosko. Como los vectores tienen el mismo origen, son concurrentes. 
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-3b56" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 4</h3>
+<div id="taquestion3b56" class="block iDevice_content">
+<b>(4) </b>El trayecto que realiza el kioskero hacia la casa de la señora es más largo que el que realiza la señora hasta el kiosko. 
+
+</div>
+<p class="iDevice_answer js-required">
+<label for="true3b56"><input type="radio" name="option3b56" id="true3b56" class="exe-radio-option exe-radio-option-0-2-3b56-truefalse" /> Verdadero</label> 
+<label for="false3b56"><input type="radio" name="option3b56" id="false3b56" class="exe-radio-option exe-radio-option-1-2-3b56-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s3b56" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s3b56-result" class="wrong">Falso</strong></p>
+Tiene la misma distancia, porque sus vectores son opuestos, mismo recorrido pero en sentido contrario y, sabemos que, los vectores opuestos tienen el mismo módulo (la misma longitud). ¡Compruébalo, usando la escena de Geogebra, pinta los dos vectores y calcula sus módulos.
+
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-4b56" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 5</h3>
+<div id="taquestion4b56" class="block iDevice_content">
+<p><b>(5) </b>El vector que describe la trayectoria del cliente que abandona el kiosko al mismo tiempo que el kioskero es el \((0,-20)\). Su módulo vale \(-20\).</p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true4b56"><input type="radio" name="option4b56" id="true4b56" class="exe-radio-option exe-radio-option-0-2-4b56-truefalse" /> Verdadero</label> 
+<label for="false4b56"><input type="radio" name="option4b56" id="false4b56" class="exe-radio-option exe-radio-option-1-2-4b56-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s4b56" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s4b56-result" class="wrong">Falso</strong></p>
+<p>Es el \((0,-20)\), "\(0\)" en dirección horizontal (Este-Oeste) y "\(20\)" en dirección vertical (Sur, hacia abajo, por tanto, negativa)</p>
+<p>El módulo de un vector es una distancia, por tanto, siempre es positiva o nula. Vale \(20\), lo puedes comprobar pintando el vector en el applet de Geogebra y calculando su módulo o, directamente, desde aquí:</p>
+<p>\(|(0,20)|=\sqrt{0^2+(-20)^2}=\sqrt{400}=20\)</p>
+</div>
+</div>
+<div class="question">
+<form name="true-false-form-5b56" action="#" class="activity-form">
+<h3 class="js-sr-av">Pregunta 6</h3>
+<div id="taquestion5b56" class="block iDevice_content">
+<p><b>(6) </b>Un vector unitario, con la misma dirección y el mismo sentido que el vector que describe la trayectoria del desplazamiento de la señora hasta el kiosko es el \( \left( \dfrac{4}{5},-\dfrac{3}{5} \right) \) </p>
+</div>
+<div class="iDevice_hint">
+<h4 class="iDevice_hint_title">Sugerencia</h4>
+<div class="iDevice_hint_content js-hidden">
+Recuerda que el vector desplazamiento de la trayectoria de la señora es el (8,-6). Mira en el Importante, sino recuerdas cómo convertir un vector en unitario.
+</div>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true5b56"><input type="radio" name="option5b56" id="true5b56" class="exe-radio-option exe-radio-option-0-2-5b56-truefalse" /> Verdadero</label> 
+<label for="false5b56"><input type="radio" name="option5b56" id="false5b56" class="exe-radio-option exe-radio-option-1-2-5b56-truefalse" /> Falso</label>
+</p>
+</form>
+<div id="s5b56" class="feedback js-feedback js-hidden">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<p><strong id="s5b56-result" class="right">Verdadero</strong></p>
+<p>Para obtener un vector unitario, a partir de uno dado, sólo hace falta dividir cada una de las coordenadas de dicho vector entre el módulo del mismo.</p>
+<p>\(|(8,-6)|=\sqrt{8^2+(-6)^2}=\sqrt{100}=10\)</p>
+<p>\( \vec{u}=\left( \dfrac{8}{10},-\dfrac{6}{10} \right) \overset{simplificando}{=} \left( \dfrac{4}{5},-\dfrac{3}{5} \right) \)</p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="1_vectores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_operaciones_con_vectores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</div>
+</div>
+<div id="siteFooter"><script>
+// HACKeXe - https://hackexe.tiddlyhost.com
+// Maximiza el área de lectura v2.1
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Definir el nuevo valor de max-width
+    var newMaxWidth = '100%'; // Cambia este valor a '0%' si no quieres que el ancho cambie. Puedes poner otro %, por ejemplo '100%'
+
+    // Verificar si la página tiene una meta etiqueta con name="generator"
+    var hasGeneratorMeta = document.querySelector('meta[name="generator"]');
+    
+    // Si no existe la etiqueta meta con name="generator", abortar la ejecución del script
+    if (!hasGeneratorMeta) {
+        return;
+    }
+
+    // Identificar elementos del DOM
+    var $headerBar = $("#header");
+    var $pageTitle = $('h1');
+    var $body = $('body');
+    var $siteNav = $('#siteNav');
+    var $headerOptions = $('#header-options');
+    var $pageCounter = $('.page-counter'); // Selector para el contador de páginas
+    var $content = $('#content'); // Selector para el contenido principal
+
+    // Añadir transiciones suaves a los elementos que cambian de ancho
+    $content.css('transition', 'max-width 0.5s ease, width 0.5s ease');
+    $body.css('transition', 'max-width 0.5s ease');
+
+    // Verificar el estado almacenado para la visibilidad de la cabecera y menú
+    var isHeaderHidden = localStorage.getItem('headerHidden') === 'true';
+
+    // Crear el botón con lógica de flechas y aplicar estilos para fijarlo en la posición deseada
+    var $toggleButton = $('<button id="toggle-nav">' + (isHeaderHidden ? "▼" : "▲") + '</button>').css({
+        'position': 'absolute',
+        'top': '5px',
+        'right': '10px',
+        'z-index': '1000',
+        'background': 'none',
+        'border': 'none',
+        'color': 'black',
+        'fontSize': '1.5rem',
+        'cursor': 'pointer'
+    }).attr('title', isHeaderHidden ? "Restaurar área de lectura" : "Maximizar área de lectura");
+
+    // Añadir el botón al cuerpo de la página para asegurar que siempre esté visible y fuera del flujo normal de elementos
+    $('body').append($toggleButton);
+
+    // Función para alternar la visibilidad de la cabecera, el menú, el contador de páginas y otras opciones
+    function toggleHeaderAndMenu() {
+        var currentlyHidden = $headerBar.css('display') === 'none';
+        
+        if (currentlyHidden) {
+            $headerBar.show();
+            $pageTitle.show();
+            $siteNav.show();
+            $headerOptions.show();
+            $pageCounter.show(); // Mostrar el contador de páginas
+            $body.removeClass('no-nav').css('padding-top', '');
+            $content.css('max-width', ''); // Restaurar el ancho original
+            $body.css('max-width', ''); // Restaurar el ancho original
+            $content.css('width', ''); // Restaurar el ancho original
+            $toggleButton.text("▲");
+            $toggleButton.attr('title', "Maximizar área de lectura");
+            localStorage.setItem('headerHidden', false);
+        } else {
+            $headerBar.hide();
+            $pageTitle.hide();
+            $siteNav.hide();
+            $headerOptions.hide();
+            $pageCounter.hide(); // Esconder el contador de páginas
+            $body.addClass('no-nav').css('padding-top', '10px');
+            
+            // Solo aplicar max-width si no es 0%
+            if (newMaxWidth !== '0%') {
+                $content.css('max-width', newMaxWidth); // Expandir el contenido
+                $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+                $content.css('width', newMaxWidth); // Expandir el contenido
+            }
+            
+            $toggleButton.text("▼");
+            $toggleButton.attr('title', "Restaurar área de lectura");
+            localStorage.setItem('headerHidden', true);
+        }
+    }
+
+    // Asignar evento de clic al botón
+    $toggleButton.on('click', toggleHeaderAndMenu);
+
+    // Inicializar el estado de la visibilidad de la cabecera, el menú y el contador de páginas
+    if (isHeaderHidden) {
+        $headerBar.hide();
+        $pageTitle.hide();
+        $siteNav.hide();
+        $headerOptions.hide();
+        $pageCounter.hide(); // Inicialmente esconder el contador de páginas
+        $body.addClass('no-nav').css('padding-top', '10px');
+        
+        // Solo aplicar max-width si no es 0%
+        if (newMaxWidth !== '0%') {
+            $content.css('max-width', newMaxWidth); // Expandir el contenido
+            $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+            $content.css('width', newMaxWidth); // Expandir el contenido
+        }
+        
+        $toggleButton.text("▼");
+        $toggleButton.attr('title', "Restaurar área de lectura");
+    } else {
+        $headerBar.show();
+        $pageTitle.show();
+        $siteNav.show();
+        $headerOptions.show();
+        $pageCounter.show(); // Inicialmente mostrar el contador de páginas
+        $body.removeClass('no-nav').css('padding-top', '');
+        $content.css('max-width', ''); // Restaurar el ancho original
+        $body.css('max-width', ''); // Restaurar el ancho original
+        $content.css('width', ''); // Restaurar el ancho original
+        $toggleButton.text("▲");
+        $toggleButton.attr('title', "Maximizar área de lectura");
+    }
+});
+</script>
+</div></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

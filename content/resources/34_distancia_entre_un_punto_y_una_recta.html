@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.4 Distancia entre un punto y una recta | MT1 - Tema 3.3: Geometría: Vectores. Geometría plana. La recta en el plano. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="es" />
+<meta name="author" content="IEDA" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="geogebra-activity.css" />
+<script type="text/javascript" src="geogebra-activity.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-auto-math" id="exe-node-72"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<div id="header" ><div id="headerContent">MT1 - Tema 3.3: Geometría: Vectores. Geometría plana. La recta en el plano.</div></div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Geometría: Vectores. Geometría plana. La recta en el plano</a></li>
+   <li><a href="1_vectores.html" class="daddy">1. Vectores</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos_bsicos.html" class="no-ch">1.1. Conceptos básicos</a></li>
+      <li><a href="12_operaciones_con_vectores.html" class="no-ch">1.2. Operaciones con vectores</a></li>
+      <li><a href="13_dependencia_lineal.html" class="no-ch">1.3. Dependencia lineal</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="2_rectas.html" class="current-page-parent daddy">2. Rectas</a>
+   <ul>
+      <li><a href="31_ecuaciones_de_la_recta.html" class="no-ch">3.1. Ecuaciones de la recta</a></li>
+      <li><a href="32_interpretacin_de_la_pendiente.html" class="no-ch">3.2 Interpretación de la pendiente</a></li>
+      <li><a href="33_posiciones_relativas_de_rectas_en_el_plano.html" class="no-ch">3.3 Posiciones relativas de rectas en el plano</a></li>
+      <li id="active"><a href="34_distancia_entre_un_punto_y_una_recta.html" class="active no-ch">3.4 Distancia entre un punto y una recta</a></li>
+   </ul>
+   </li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="33_posiciones_relativas_de_rectas_en_el_plano.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">3.4 Distancia entre un punto y una recta</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id198">
+<div class="iDevice emphasis0">
+<div id="ta198_1" class="block iDevice_content">
+<p>Mira la imagen de abajo. Se trata de un plano de la ciudad de Barcelona, concretamente de la Avenida Diagonal. Si desde la glorieta donde está la cruz roja queremos llegar a la Calle de Aragón (la línea amarilla), tenemos varias opciones, marcadas a la derecha con líneas verdes. Si nos preguntamos qué distancia hay desde la glorieta a la Calle de Aragón, ¿qué camino elegirías para medir? Es evidente que el más corto, y como puedes ver, el camino más corto se obtiene siguiendo una <b>recta perpendicular</b> a la que tenemos.</p>
+<p> </p>
+<div style="text-align: center;"><img src="bcn.png" height="287" width="688" /></div>
+<p> </p>
+<p>¿Y, cómo conseguimos una recta perpendicular? Está claro que necesitamos un punto, aquel de donde partimos, y un vector, que debe ser perpendicular a la recta, y por tanto a su vector director.</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper preknowledgeIdevice em_iDevice em_iDevice_importante" id="id199">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Definición. Vector normal a una recta.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta199_130_7" class="block iDevice_content">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="10">
+<tbody>
+<tr>
+<td style="width: 100%;">Si tenemos una recta \(r\), que tiene por vector director \(\vec{u}(a,b)\), llamaremos <span style="color: #008000;"><b>vector normal</b></span> a la recta, a cualquier vector <b><span style="color: #008000;">perpendicular</span> </b>al vector director.</td>
+</tr>
+</tbody>
+</table>
+<table border="0" style="width: 100%; background-color: #edfcfc;" cellpadding="10">
+<tbody>
+<tr>
+<td style="width: 100%;">Por ejemplo \(\vec{n}(-b,a)\), podría ser un vector normal de la recta, por que el producto escalar con \(\vec{u}\) es cero.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id200">
+<div class="iDevice emphasis0">
+<div id="ta200_1" class="block iDevice_content">
+<p>Por tanto, para medir la distancia de un punto P a una recta r, el procedimiento más intuitivo sería:</p>
+<ul>
+<li>calcular la ecuación de una recta s perpendicular a r que pase por P</li>
+<li>hallar el punto Q donde se cortan r y s</li>
+<li>medir la distancia de P a Q, que es la medida del módulo del vector PQ</li>
+</ul>
+<p>En el applet que tienes a continuación puedes ver un ejemplo. Para ello, pulsa el botón <b>Reproduce <img src="img0.1.png" width="24" height="23" alt="" /></b>:</p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper GeoGebraIdevice" id="id173">
+<div class="iDevice emphasis0" >
+<div id="ta173_209_2" class="block iDevice_content">
+<div class="auto-geogebra auto-geogebra-efgwdcre auto-geogebra-width-870 auto-geogebra-height-607 language-es showSuggestionButtons0 ShowAuthor0 auto-geogebra-scale-100 auto-geogebra-evaluation-id-0 auto-geogebra-ideviceid-2026116183847-60"><p><a href="https://www.geogebra.org/m/efgwdcre" target="_blank">https://www.geogebra.org/m/efgwdcre (Ventana nueva)</a></p><div class="auto-geogebra-author js-hidden">Luis%20Mart%EDnez,https%3A//ggbm.at/61272504,Copia%20de%20Distancia%20de%20un%20punto%20a%20una%20recta.,0,Autor%EDa</div><div class="auto-geogebra-messages-evaluation">Actividad%20no%20completada,Actividad%20superada.%20Puntuaci%F3n%3A%20%25s,Actividad%20no%20superada.%20Puntuaci%F3n%3A%20%25s,Guardar%20la%20puntuaci%F3n</div></div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_rep_conocer" id="id174">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header" style="background-image:url(icon_udl_rep_conocer.svg)"><h2 class="iDeviceTitle">Fórmula. Distancia de un punto a una recta.</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta174_210_2" class="block iDevice_content">
+<div class="exe-text"><p>Afortunadamente, no es necesario dar todos esos pasos para calcular la distancia de un punto a una recta ya que disponemos de una fórmula.</p>
+<p>Si tenemos un punto \(P = (x_0, y_0)\) y una recta \(r \equiv Ax+By+C=0\), la distancia de \(P\) a \(r\) viene dada por:</p>
+<table border="0" style="height: 30px; width: 52.935%; background-color: #d4fada;" cellpadding="10">
+<tbody>
+<tr style="height: 30px;">
+<td style="width: 100%; text-align: center; height: 30px;">
+<h4><span style="color: #008000;">\(d(P,r) = \dfrac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}\)</span></h4>
+</td>
+</tr>
+</tbody>
+</table>
+<p> <br /> </p>
+<p> </p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id203">
+<div class="iDevice emphasis1" >
+<div class="iDevice_header"><h2 class="iDeviceTitle">Comprueba lo aprendido</h2></div>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="question">
+<form name="multi-choice-form-203_2" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion203_2" class="block question iDevice_content">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<table border="0" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 100%;"><img src="maparizona.png" align="right" height="413" width="384" style="float: left;" /></td>
+</tr>
+</tbody>
+</table>
+<p>Éste es el desierto de Arizona, donde un rancho se encuentra en el lugar de la estrella, y está rodeada por tres carreteras:</p>
+<p> </p>
+<ul>
+<li><span style="color: #000000;">La carretera local (rojo): <span style="background-color: #fa527f;">\(r ≡ y - 5 = 0\)</span></span></li>
+<li><span style="color: #000000;">La carretera 587 (verde): <span style="background-color: #00ff00;">\(s ≡ x - 4 = 0\)</span></span></li>
+<li><span style="color: #000000;">La ruta 10 (amarillo): <span style="background-color: #ffff00;">\(t ≡ 5x + 4y + 24 = 0\)</span></span></li>
+</ul>
+<p> </p>
+<p>En este sistema de referencia, el rancho tiene coordenadas \(P(0,0)\).</p>
+<p> </p>
+<p>Para abrir un camino que comunique el rancho, se ha decidido buscar el camino más corto hasta una de las carreteras del mapa.</p>
+<p> </p>
+<p>a) ¿Qué distancia hay desde el rancho hasta la carretera local?</p>
+</div>
+<div class="iDevice_hint">
+<h4 class="iDevice_hint_title">Sugerencia</h4>
+<div class="iDevice_hint_content js-hidden">
+<div id="tahint203_2" class="block iDevice_content">
+<p>Si la ecuación es \(r \equiv y - 5 = 0\), tendrás que sustituir en la fórmula \(A=0\), \(B=1\), \(C=-5\).</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i203_5" class="sr-av"><a href="#answer-203_5">Opción 1</a></label><input type="radio" name="option203_2" id="i203_5" class="exe-radio-option exe-radio-option-0-2-203_2-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-203_5"><a name="answer-203_5"></a>
+<div id="taans203_5" class="block iDevice_content">
+<p>\(4\)</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i203_45" class="sr-av"><a href="#answer-203_45">Opción 2</a></label><input type="radio" name="option203_2" id="i203_45" class="exe-radio-option exe-radio-option-1-2-203_2-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-203_45"><a name="answer-203_45"></a>
+<div id="taans203_45" class="block iDevice_content">
+<p>\(5\)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b203_2" class="feedback js-hidden"><a name="sa0b203_2"></a>
+<div id="taf203_5" class=" iDevice_content">
+¿Seguro? No has aplicado bien la fórmula. 
+
+</div>
+</div>
+<div id="sa1b203_2" class="feedback js-hidden"><a name="sa1b203_2"></a>
+<div id="taf203_45" class=" iDevice_content">
+Muy bien. 
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-203_5">Incorrecto</a><span> (<a href="#sa0b203_2">Retroalimentación</a>)</span></li>
+<li><a href="#answer-203_45">Opción correcta</a><span> (<a href="#sa1b203_2">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+<div class="question">
+<form name="multi-choice-form-203_48" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion203_48" class="block question iDevice_content">
+<p>¿Qué distancia hay del rancho a la carretera \(587\)?</p>
+</div>
+<div class="iDevice_hint">
+<h4 class="iDevice_hint_title">Sugerencia</h4>
+<div class="iDevice_hint_content js-hidden">
+<div id="tahint203_48" class="block iDevice_content">
+<p>En este caso \(A=1\), \(B=0\), \(C=-4\)</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i203_51" class="sr-av"><a href="#answer-203_51">Opción 1</a></label><input type="radio" name="option203_48" id="i203_51" class="exe-radio-option exe-radio-option-0-2-203_48-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-203_51"><a name="answer-203_51"></a>
+<div id="taans203_51" class="block iDevice_content">
+<p>\(4\)</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i203_60" class="sr-av"><a href="#answer-203_60">Opción 2</a></label><input type="radio" name="option203_48" id="i203_60" class="exe-radio-option exe-radio-option-1-2-203_48-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-203_60"><a name="answer-203_60"></a>
+<div id="taans203_60" class="block iDevice_content">
+<p>\(5\)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b203_48" class="feedback js-hidden"><a name="sa0b203_48"></a>
+<div id="taf203_51" class=" iDevice_content">
+Estupendo, has aplicado bien la fórmula.
+
+</div>
+</div>
+<div id="sa1b203_48" class="feedback js-hidden"><a name="sa1b203_48"></a>
+<div id="taf203_60" class=" iDevice_content">
+No es esta la respuesta.
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-203_51">Opción correcta</a><span> (<a href="#sa0b203_48">Retroalimentación</a>)</span></li>
+<li><a href="#answer-203_60">Incorrecto</a><span> (<a href="#sa1b203_48">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+<div class="question">
+<form name="multi-choice-form-203_54" action="#" onsubmit="return false" class="activity-form">
+<h3 class="js-sr-av">Pregunta</h3>
+<div id="taquestion203_54" class="block question iDevice_content">
+<p>c) ¿Qué distancia hay hasta la ruta \(10\)?</p>
+</div>
+<div class="iDevice_hint">
+<h4 class="iDevice_hint_title">Sugerencia</h4>
+<div class="iDevice_hint_content js-hidden">
+<div id="tahint203_54" class="block iDevice_content">
+Redondea a dos decimales
+
+</div>
+</div>
+</div>
+<div class="iDevice_answers">
+<h4 class="js-sr-av">Respuestas</h4>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i203_57" class="sr-av"><a href="#answer-203_57">Opción 1</a></label><input type="radio" name="option203_54" id="i203_57" class="exe-radio-option exe-radio-option-0-2-203_54-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-203_57"><a name="answer-203_57"></a>
+<div id="taans203_57" class="block iDevice_content">
+<p>\(3,75\)</p>
+</div>
+</div>
+</div>
+<div class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i203_63" class="sr-av"><a href="#answer-203_63">Opción 2</a></label><input type="radio" name="option203_54" id="i203_63" class="exe-radio-option exe-radio-option-1-2-203_54-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-203_63"><a name="answer-203_63"></a>
+<div id="taans203_63" class="block iDevice_content">
+<p>\(4,52\)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_feedbacks js-feedback">
+<h4 class="js-sr-av">Retroalimentación</h4>
+<div id="sa0b203_54" class="feedback js-hidden"><a name="sa0b203_54"></a>
+<div id="taf203_57" class=" iDevice_content">
+Muy bien, se ve que has aplicado correctamente la fórmula anterior.
+
+</div>
+</div>
+<div id="sa1b203_54" class="feedback js-hidden"><a name="sa1b203_54"></a>
+<div id="taf203_63" class=" iDevice_content">
+No es correcto
+
+</div>
+</div>
+</div>
+</form>
+<div class="iDevice_solution feedback js-hidden">
+<h4>Solución</h4>
+<ol>
+<li><a href="#answer-203_57">Opción correcta</a><span> (<a href="#sa0b203_54">Retroalimentación</a>)</span></li>
+<li><a href="#answer-203_63">Incorrecto</a><span> (<a href="#sa1b203_54">Retroalimentación</a>)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="33_posiciones_relativas_de_rectas_en_el_plano.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</div>
+</div>
+<div id="siteFooter"><script>
+// HACKeXe - https://hackexe.tiddlyhost.com
+// Maximiza el área de lectura v2.1
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Definir el nuevo valor de max-width
+    var newMaxWidth = '100%'; // Cambia este valor a '0%' si no quieres que el ancho cambie. Puedes poner otro %, por ejemplo '100%'
+
+    // Verificar si la página tiene una meta etiqueta con name="generator"
+    var hasGeneratorMeta = document.querySelector('meta[name="generator"]');
+    
+    // Si no existe la etiqueta meta con name="generator", abortar la ejecución del script
+    if (!hasGeneratorMeta) {
+        return;
+    }
+
+    // Identificar elementos del DOM
+    var $headerBar = $("#header");
+    var $pageTitle = $('h1');
+    var $body = $('body');
+    var $siteNav = $('#siteNav');
+    var $headerOptions = $('#header-options');
+    var $pageCounter = $('.page-counter'); // Selector para el contador de páginas
+    var $content = $('#content'); // Selector para el contenido principal
+
+    // Añadir transiciones suaves a los elementos que cambian de ancho
+    $content.css('transition', 'max-width 0.5s ease, width 0.5s ease');
+    $body.css('transition', 'max-width 0.5s ease');
+
+    // Verificar el estado almacenado para la visibilidad de la cabecera y menú
+    var isHeaderHidden = localStorage.getItem('headerHidden') === 'true';
+
+    // Crear el botón con lógica de flechas y aplicar estilos para fijarlo en la posición deseada
+    var $toggleButton = $('<button id="toggle-nav">' + (isHeaderHidden ? "▼" : "▲") + '</button>').css({
+        'position': 'absolute',
+        'top': '5px',
+        'right': '10px',
+        'z-index': '1000',
+        'background': 'none',
+        'border': 'none',
+        'color': 'black',
+        'fontSize': '1.5rem',
+        'cursor': 'pointer'
+    }).attr('title', isHeaderHidden ? "Restaurar área de lectura" : "Maximizar área de lectura");
+
+    // Añadir el botón al cuerpo de la página para asegurar que siempre esté visible y fuera del flujo normal de elementos
+    $('body').append($toggleButton);
+
+    // Función para alternar la visibilidad de la cabecera, el menú, el contador de páginas y otras opciones
+    function toggleHeaderAndMenu() {
+        var currentlyHidden = $headerBar.css('display') === 'none';
+        
+        if (currentlyHidden) {
+            $headerBar.show();
+            $pageTitle.show();
+            $siteNav.show();
+            $headerOptions.show();
+            $pageCounter.show(); // Mostrar el contador de páginas
+            $body.removeClass('no-nav').css('padding-top', '');
+            $content.css('max-width', ''); // Restaurar el ancho original
+            $body.css('max-width', ''); // Restaurar el ancho original
+            $content.css('width', ''); // Restaurar el ancho original
+            $toggleButton.text("▲");
+            $toggleButton.attr('title', "Maximizar área de lectura");
+            localStorage.setItem('headerHidden', false);
+        } else {
+            $headerBar.hide();
+            $pageTitle.hide();
+            $siteNav.hide();
+            $headerOptions.hide();
+            $pageCounter.hide(); // Esconder el contador de páginas
+            $body.addClass('no-nav').css('padding-top', '10px');
+            
+            // Solo aplicar max-width si no es 0%
+            if (newMaxWidth !== '0%') {
+                $content.css('max-width', newMaxWidth); // Expandir el contenido
+                $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+                $content.css('width', newMaxWidth); // Expandir el contenido
+            }
+            
+            $toggleButton.text("▼");
+            $toggleButton.attr('title', "Restaurar área de lectura");
+            localStorage.setItem('headerHidden', true);
+        }
+    }
+
+    // Asignar evento de clic al botón
+    $toggleButton.on('click', toggleHeaderAndMenu);
+
+    // Inicializar el estado de la visibilidad de la cabecera, el menú y el contador de páginas
+    if (isHeaderHidden) {
+        $headerBar.hide();
+        $pageTitle.hide();
+        $siteNav.hide();
+        $headerOptions.hide();
+        $pageCounter.hide(); // Inicialmente esconder el contador de páginas
+        $body.addClass('no-nav').css('padding-top', '10px');
+        
+        // Solo aplicar max-width si no es 0%
+        if (newMaxWidth !== '0%') {
+            $content.css('max-width', newMaxWidth); // Expandir el contenido
+            $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+            $content.css('width', newMaxWidth); // Expandir el contenido
+        }
+        
+        $toggleButton.text("▼");
+        $toggleButton.attr('title', "Restaurar área de lectura");
+    } else {
+        $headerBar.show();
+        $pageTitle.show();
+        $siteNav.show();
+        $headerOptions.show();
+        $pageCounter.show(); // Inicialmente mostrar el contador de páginas
+        $body.removeClass('no-nav').css('padding-top', '');
+        $content.css('max-width', ''); // Restaurar el ancho original
+        $body.css('max-width', ''); // Restaurar el ancho original
+        $content.css('width', ''); // Restaurar el ancho original
+        $toggleButton.text("▲");
+        $toggleButton.attr('title', "Maximizar área de lectura");
+    }
+});
+</script>
+</div></div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

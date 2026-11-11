@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mv5k8nxp-sgixiqrxq">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3.4 Distancia entre un punto y una recta | Geometría.</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Curso 1º - Enseñanza Bachillerato
+Nombre asignatura/materia: Matemáticas I">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/geogebra-activity/geogebra-activity.js"></script><link rel="stylesheet" href="../idevices/geogebra-activity/geogebra-activity.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../libs/exe_highlighter/exe_highlighter.js"> </script>
+<link rel="stylesheet" href="../libs/exe_highlighter/exe_highlighter.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><script src="../theme/z-custom-effects.js"> </script><link rel="stylesheet" href="../theme/colores.css"><link rel="stylesheet" href="../theme/comic.css"><link rel="stylesheet" href="../theme/ejercicio.css"><link rel="stylesheet" href="../theme/libreta.css"><link rel="stylesheet" href="../theme/navegacion.css"><link rel="stylesheet" href="../theme/nota-azul.css"><link rel="stylesheet" href="../theme/retroalimentacion.css"><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mv5k8nxp-sgixiqrxq" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Geometría</a>
+</li>
+<li> <a href="../html/1-vectores.html" class="daddy">1. Vectores</a>
+<ul class="other-section">
+<li> <a href="../html/11-conceptos-basicos.html" class="no-ch">1.1. Conceptos básicos</a>
+</li>
+<li> <a href="../html/12-operaciones-con-vectores.html" class="no-ch">1.2. Operaciones con vectores</a>
+</li>
+<li> <a href="../html/13-dependencia-lineal.html" class="no-ch">1.3. Dependencia lineal</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/2-rectas.html" class="daddy">2. Rectas</a>
+<ul class="other-section">
+<li> <a href="../html/31-ecuaciones-de-la-recta.html" class="no-ch">3.1. Ecuaciones de la recta</a>
+</li>
+<li> <a href="../html/32-interpretacion-de-la-pendiente.html" class="no-ch">3.2 Interpretación de la pendiente</a>
+</li>
+<li> <a href="../html/33-posiciones-relativas-de-rectas-en-el-plano.html" class="no-ch">3.3 Posiciones relativas de rectas en el plano</a>
+</li>
+<li class="active"> <a href="../html/34-distancia-entre-un-punto-y-una-recta.html" class="active no-ch">3.4 Distancia entre un punto y una recta</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mv5k8nxp-sgixiqrxq" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Geometría.</p>
+<p class="package-subtitle">Vectores. Geometría plana. La recta en el plano.</p></div>
+<div class="page-header"><h1 class="page-title">3.4 Distancia entre un punto y una recta</h1></div>
+</header><div id="page-content-page-mv5k8nxp-sgixiqrxq" class="page-content">
+<article id="block-mv5k8nxr-nc9votroy" class="box no-header sin-titulo">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxr-6a3k564ys" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxr-6a3k564ys&quot;}">
+<div class="exe-text-template">
+    <p>Mira la imagen de abajo. Se trata de un plano de la ciudad de Barcelona, concretamente de la Avenida Diagonal. Si desde la glorieta donde está la cruz roja queremos llegar a la Calle de Aragón (la línea amarilla), tenemos varias opciones, marcadas a la derecha con líneas verdes. Si nos preguntamos qué distancia hay desde la glorieta a la Calle de Aragón, ¿qué camino elegirías para medir? Es evidente que el más corto, y como puedes ver, el camino más corto se obtiene siguiendo una <b>recta perpendicular</b> a la que tenemos.</p>
+<p> </p>
+<div style="text-align: center;"><img src="../content/resources/bcn.jpg" width="60%" /></div>
+<p> </p>
+<p>¿Y, cómo conseguimos una recta perpendicular? Está claro que necesitamos un punto, aquel de donde partimos, y un vector, que debe ser perpendicular a la recta, y por tanto a su vector director.</p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxr-7t16k5ng5" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Vector normal a una recta.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxr-dm3by0v1e" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxr-dm3by0v1e&quot;}">
+<table border="0" style="width: 100%; background-color: #d4fada;" cellpadding="10">
+<tbody>
+<tr>
+<td style="width: 100%;">Si tenemos una recta \(r\), que tiene por vector director \(\vec{u}(a,b)\), llamaremos <span style="color: #008000;"><b>vector normal</b></span> a la recta, a cualquier vector <b><span style="color: #008000;">perpendicular</span> </b>al vector director.</td>
+</tr>
+</tbody>
+</table>
+<table border="0" style="width: 100%; background-color: #edfcfc;" cellpadding="10">
+<tbody>
+<tr>
+<td style="width: 100%;">Por ejemplo \(\vec{n}(-b,a)\), podría ser un vector normal de la recta, por que el producto escalar con \(\vec{u}\) es cero.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article><article id="block-mv5k8nxr-l94xe59je" class="box boton-verde">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Cálculo de la distancia de un punto a una recta.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxr-a388mi2md" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxr-a388mi2md&quot;}">
+<div class="exe-text-template">
+    <table cellpadding="10" style="width: 100%; background-color: #bfedd2;">
+<tbody>
+<tr>
+<td style="width: 99.9407%;">
+<p>Por tanto, para medir la distancia de un punto \(P\) a una recta \(r\), el <span style="color: #007632;"><strong>procedimiento</strong></span> más intuitivo sería:</p>
+<ul>
+<li>
+<p>calcular la ecuación de una recta \(s\) perpendicular a \(r\) que pase por \(P\)</p>
+</li>
+<li>
+<p>hallar el punto \(Q\) donde se cortan \(r\) y \(s\)</p>
+</li>
+<li>
+<p>medir la distancia de \(P\) a \(Q\), que es la medida del módulo del vector \(\overrightarrow{PQ}\)</p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<p>En el applet que tienes a continuación puedes ver un ejemplo. Para ello, pulsa el botón de reproducir <b> (<img src="../content/resources/img0.1.jpg" width="24" height="23" alt="" />). </b>Al lado puedes ajustar la velocidad.</p>
+</div>
+</div><div id="idevice-mv5k8nxr-244kdcr9s" class="idevice_node geogebra-activity" data-idevice-path="../idevices/geogebra-activity/" data-idevice-type="geogebra-activity">
+<div class="auto-geogebra auto-geogebra-efgwdcre auto-geogebra-width-950 auto-geogebra-height-607 language-es showSuggestionButtons0 ShowTitle0 ShowAuthor0 auto-geogebra-scale-100 auto-geogebra-evaluation-id-0 auto-geogebra-ideviceid-idevice-mv5k8nxr-244kdcr9s auto-geogebra-weight-100"><div class="game-evaluation-ids js-hidden" data-id="idevice-mv5k8nxr-244kdcr9s" data-evaluationb="false" data-evaluationid="0"></div><p><a href="https://www.geogebra.org/m/efgwdcre" target="_blank">https://www.geogebra.org/m/efgwdcre (Ventana nueva)</a></p><div class="auto-geogebra-author js-hidden">Luis%20Mart%EDnez,https%3A//ggbm.at/61272504,Copia%20de%20Distancia%20de%20un%20punto%20a%20una%20recta.,0,Autor%EDa,0,T%EDtulo</div><div class="auto-geogebra-messages-evaluation">Actividad%20no%20completada,Actividad%20superada.%20Puntuaci%F3n%3A%20%25s,Actividad%20no%20superada.%20Puntuaci%F3n%3A%20%25s,Guardar%20la%20puntuaci%F3n</div><div class="auto-geogebra-messages-scorm">La%20puntuaci%F3n%20no%20se%20puede%20guardar%20porque%20esta%20p%E1gina%20no%20forma%20parte%20de%20un%20paquete%20SCORM,Su%20puntuaci%F3n,Puntuaci%F3n,Peso,La%20%FAltima%20puntuaci%F3n%20guardada%20es</div></div>
+</div>
+</div>
+</article><article id="block-mv5k8nxr-lpaz9wc8e" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_definicion.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Fórmula. Distancia de un punto a una recta.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxr-0ttovknis" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxr-0ttovknis&quot;}">
+<div class="exe-text-template">
+    <p>Afortunadamente, no es necesario dar todos esos pasos para calcular la distancia de un punto a una recta ya que disponemos de una fórmula.</p>
+<p>Si tenemos un punto \(P = (x_0, y_0)\) y una recta \(r \equiv Ax+By+C=0\), la distancia de \(P\) a \(r\) viene dada por:</p>
+<table border="0" cellpadding="15" style="width: 100%; background-color: #d4fada;">
+<tbody>
+<tr style="height: 30px;">
+<td style="width: 100%; text-align: center; height: 30px;">
+<h4><span style="color: #008000;">\(d(P,r) = \dfrac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}\)</span></h4>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+</div>
+</div>
+</div>
+</article><article id="block-mv5k8nxr-edih36kc7" class="box caja-morada boton-morado">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/icon_formulario.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Ejercicio.</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mv5k8nxr-a7l81ulwm" class="idevice_node form" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mv5k8nxr-a7l81ulwm&quot;,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;repeatActivity&quot;:true,&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;weighted&quot;:100,&quot;msgs&quot;:{&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgYouScore&quot;:&quot;Tu puntuación es&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Formulario&quot;,&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgSaveScore&quot;:&quot;Guardar la puntuación&quot;,&quot;msgResult&quot;:&quot;Resultado&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReset&quot;:&quot;Reiniciar&quot;,&quot;msgShowAnswers&quot;:&quot;Mostrar respuestas&quot;,&quot;msgTestResultPass&quot;:&quot;¡Felicidades! Has pasado la prueba&quot;,&quot;msgTestResultNotPass&quot;:&quot;Lo siento. Has fallado la prueba&quot;,&quot;msgTrueFalseHelp&quot;:&quot;Di si la afirmación es verdadera o falsa&quot;,&quot;msgDropdownHelp&quot;:&quot;Elige la respuesta correcta entre las opciones propuestas&quot;,&quot;msgFillHelp&quot;:&quot;Rellena los espacios en blanco con la palabra apropiada&quot;,&quot;msgSingleSelectionHelp&quot;:&quot;Opción múltiple con solo una respuesta correcta&quot;,&quot;msgMultipleSelectionHelp&quot;:&quot;Opción múltiple con varias respuestas correctas&quot;,&quot;msgPlayStart&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;},&quot;id&quot;:&quot;idevice-mv5k8nxr-a7l81ulwm&quot;,&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:&quot;100&quot;,&quot;time&quot;:&quot;0&quot;,&quot;eXeFormInstructions&quot;:&quot;&lt;p&gt;Responde a las preguntas del cuestionario.&lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;../content/resources/maparizona.jpg\&quot; width=\&quot;60%\&quot; alt=\&quot;\&quot; style=\&quot;display: block; margin-left: auto; margin-right: auto;\&quot; /&gt;&lt;br /&gt;&lt;/p&gt;\n&lt;p&gt;Éste es el desierto de Arizona, donde un rancho se encuentra en el lugar de la estrella, y está rodeada por tres carreteras:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;span style=\&quot;color: #000000;\&quot;&gt;La carretera local (rojo): &lt;/span&gt;&lt;span style=\&quot;background-color: #ff2900; border: 1px solid #260000; color: #260000; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem;\&quot;&gt;\\(r ≡ y - 5 = 0\\)&lt;/span&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;span style=\&quot;color: #000000;\&quot;&gt;La carretera 587 (verde): &lt;/span&gt;&lt;span style=\&quot;background-color: #23ff00; border: 1px solid #042600; color: #042600; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem;\&quot;&gt;\\(s ≡ x - 4 = 0\\)&lt;/span&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;&lt;span style=\&quot;color: #000000;\&quot;&gt;La ruta 10 (amarillo): &lt;/span&gt;&lt;span style=\&quot;background-color: #ffff00; border: 1px solid #000000; color: #000000; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem;\&quot;&gt;\\(t ≡ 5x + 4y + 24 = 0\\)&lt;/span&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;En este sistema de referencia, el rancho tiene coordenadas \\(P(0,0)\\).&lt;/p&gt;\n&lt;p&gt;Para abrir un camino que comunique el rancho, se ha decidido buscar el camino más corto hasta una de las carreteras del mapa.&lt;/p&gt;\n&lt;hr /&gt;\n&lt;p&gt;&lt;/p&gt;&quot;,&quot;questionsData&quot;:[{&quot;id&quot;:&quot;1791835352381-7OX03&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;a) ¿Qué distancia hay desde el rancho hasta la carretera local?&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;\\(4\\)&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;\\(5\\)&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1791835352381-22MYA&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;b) ¿Qué distancia hay del rancho a la carretera \\(587\\)?&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;\\(4\\)&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;\\(5\\)&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0},{&quot;id&quot;:&quot;1791835352381-74LYV&quot;,&quot;activityType&quot;:&quot;selection&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;c) ¿Qué distancia hay hasta la ruta \\(10\\)?&lt;/p&gt;&quot;,&quot;feedbackRight&quot;:&quot;&quot;,&quot;feedbackWrong&quot;:&quot;&quot;,&quot;suggestion&quot;:&quot;&quot;,&quot;wrongAnswersValue&quot;:&quot;&quot;,&quot;selectionType&quot;:&quot;single&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;\\(3,75\\)&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;\\(4,52\\)&quot;}],&quot;answer&quot;:&quot;1&quot;,&quot;capitalization&quot;:false,&quot;strict&quot;:false,&quot;order&quot;:0,&quot;customScore&quot;:1,&quot;time&quot;:0}],&quot;passRate&quot;:5,&quot;addBtnAnswers&quot;:true,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;showSlider&quot;:false}" data-idevice-template="form.html">
+<div class="exe-form-container">
+  <div class="game-evaluation-ids js-hidden" data-id="idevice-mv5k8nxr-a7l81ulwm" data-evaluationb="false" data-evaluationid=""></div>
+            <div id="frmMainContainer-idevice-mv5k8nxr-a7l81ulwm" class="form-IDevice" data-id="idevice-mv5k8nxr-a7l81ulwm">
+                <div class="form-Data js-hidden">{}</div>
+                <div class="form-instructions"><p>Responde a las preguntas del cuestionario.</p>
+<p><img src="../content/resources/maparizona.jpg" width="60%" alt="" style="display: block; margin-left: auto; margin-right: auto;" /><br /></p>
+<p>Éste es el desierto de Arizona, donde un rancho se encuentra en el lugar de la estrella, y está rodeada por tres carreteras:</p>
+<ul>
+<li>
+<p><span style="color: #000000;">La carretera local (rojo): </span><span style="background-color: #ff2900; border: 1px solid #260000; color: #260000; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem;">\(r ≡ y - 5 = 0\)</span></p>
+</li>
+<li>
+<p><span style="color: #000000;">La carretera 587 (verde): </span><span style="background-color: #23ff00; border: 1px solid #042600; color: #042600; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem;">\(s ≡ x - 4 = 0\)</span></p>
+</li>
+<li>
+<p><span style="color: #000000;">La ruta 10 (amarillo): </span><span style="background-color: #ffff00; border: 1px solid #000000; color: #000000; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem;">\(t ≡ 5x + 4y + 24 = 0\)</span></p>
+</li>
+</ul>
+<p>En este sistema de referencia, el rancho tiene coordenadas \(P(0,0)\).</p>
+<p>Para abrir un camino que comunique el rancho, se ha decidido buscar el camino más corto hasta una de las carreteras del mapa.</p>
+<hr />
+<p></p></div>
+                <div class="FRMP-GameScoreBoard" style="display:none;">
+                    <div>
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <span id="frmPTime-idevice-mv5k8nxr-a7l81ulwm">00:00</span>
+                    </div>
+                </div>
+                <div class="FRMP-StartGame" id="frmStartGameDiv-idevice-mv5k8nxr-a7l81ulwm" style="display:none;">
+                      <button  id="frmStartGame-idevice-mv5k8nxr-a7l81ulwm" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="form-body" id="frmBody-idevice-mv5k8nxr-a7l81ulwm" style="display:block;">
+                    <div class="FRMP-Questions">
+                        <div id="form-questions-idevice-mv5k8nxr-a7l81ulwm" > </div>
+                        <div id="frmCover-idevice-mv5k8nxr-a7l81ulwm" class="FRMP-Cover"> </div>
+                    </div>
+                    <div id="resultsContainer-idevice-mv5k8nxr-a7l81ulwm" class="form-results-container inline">
+                        <div id="form-score-idevice-mv5k8nxr-a7l81ulwm" class="score-text">Puntuación.</div>
+                        <div id="form-result-test-idevice-mv5k8nxr-a7l81ulwm" class="score-text phrase-score"></div>
+                    </div>
+                    <div class="form-buttons-container inline">
+                        <input id="form-button-check-idevice-mv5k8nxr-a7l81ulwm" class="btn btn-primary" type="button" value="Comprobar"
+                            data-id="idevice-mv5k8nxr-a7l81ulwm" data-pass-rate="" />
+                        <input id="form-button-reset-idevice-mv5k8nxr-a7l81ulwm" type="button" value="Reiniciar"
+                            data-id="idevice-mv5k8nxr-a7l81ulwm" class="btn btn-primary"  style="display:none" />
+                        <input id="form-button-show-answers-idevice-mv5k8nxr-a7l81ulwm" class="btn btn-primary" type="button" value="Mostrar respuestas"
+                            data-id="idevice-mv5k8nxr-a7l81ulwm" style="display: " />
+
+                    </div>
+                </div>
+                <div class="Games-BottonContainer d-flex align-items-center justify-content-end mx-auto p-0 w-100"></div>
+                
+            </div>
+            <div class="questionsMedia" style="display:none"></div>
+            
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/33-posiciones-relativas-de-rectas-en-el-plano.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<span class="nav-button nav-button-right" aria-hidden="true"><span>Siguiente</span></span>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"><div id="siteUserFooter"> <div><script>
+// HACKeXe - https://hackexe.tiddlyhost.com
+// Maximiza el área de lectura v2.1
+document.addEventListener("DOMContentLoaded", function() {
+    // Definir el nuevo valor de max-width
+    var newMaxWidth = '100%'; // Cambia este valor a '0%' si no quieres que el ancho cambie. Puedes poner otro %, por ejemplo '100%'
+    // Verificar si la página tiene una meta etiqueta con name="generator"
+    var hasGeneratorMeta = document.querySelector('meta[name="generator"]');
+    
+    // Si no existe la etiqueta meta con name="generator", abortar la ejecución del script
+    if (!hasGeneratorMeta) {
+   return;
+    }
+    // Identificar elementos del DOM
+    var $headerBar = $("#header");
+    var $pageTitle = $('h1');
+    var $body = $('body');
+    var $siteNav = $('#siteNav');
+    var $headerOptions = $('#header-options');
+    var $pageCounter = $('.page-counter'); // Selector para el contador de páginas
+    var $content = $('#content'); // Selector para el contenido principal
+    // Añadir transiciones suaves a los elementos que cambian de ancho
+    $content.css('transition', 'max-width 0.5s ease, width 0.5s ease');
+    $body.css('transition', 'max-width 0.5s ease');
+    // Verificar el estado almacenado para la visibilidad de la cabecera y menú
+    var isHeaderHidden = localStorage.getItem('headerHidden') === 'true';
+    // Crear el botón con lógica de flechas y aplicar estilos para fijarlo en la posición deseada
+    var $toggleButton = $('<button id="toggle-nav">' + (isHeaderHidden ? "▼" : "▲") + '</button>').css({
+   'position': 'absolute',
+   'top': '5px',
+   'right': '10px',
+   'z-index': '1000',
+   'background': 'none',
+   'border': 'none',
+   'color': 'black',
+   'fontSize': '1.5rem',
+   'cursor': 'pointer'
+    }).attr('title', isHeaderHidden ? "Restaurar área de lectura" : "Maximizar área de lectura");
+    // Añadir el botón al cuerpo de la página para asegurar que siempre esté visible y fuera del flujo normal de elementos
+    $('body').append($toggleButton);
+    // Función para alternar la visibilidad de la cabecera, el menú, el contador de páginas y otras opciones
+    function toggleHeaderAndMenu() {
+   var currentlyHidden = $headerBar.css('display') === 'none';
+   
+   if (currentlyHidden) {
+  $headerBar.show();
+  $pageTitle.show();
+  $siteNav.show();
+  $headerOptions.show();
+  $pageCounter.show(); // Mostrar el contador de páginas
+  $body.removeClass('no-nav').css('padding-top', '');
+  $content.css('max-width', ''); // Restaurar el ancho original
+  $body.css('max-width', ''); // Restaurar el ancho original
+  $content.css('width', ''); // Restaurar el ancho original
+  $toggleButton.text("▲");
+  $toggleButton.attr('title', "Maximizar área de lectura");
+  localStorage.setItem('headerHidden', false);
+   } else {
+  $headerBar.hide();
+  $pageTitle.hide();
+  $siteNav.hide();
+  $headerOptions.hide();
+  $pageCounter.hide(); // Esconder el contador de páginas
+  $body.addClass('no-nav').css('padding-top', '10px');
+  
+  // Solo aplicar max-width si no es 0%
+  if (newMaxWidth !== '0%') {
+ $content.css('max-width', newMaxWidth); // Expandir el contenido
+ $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+ $content.css('width', newMaxWidth); // Expandir el contenido
+  }
+  
+  $toggleButton.text("▼");
+  $toggleButton.attr('title', "Restaurar área de lectura");
+  localStorage.setItem('headerHidden', true);
+   }
+    }
+    // Asignar evento de clic al botón
+    $toggleButton.on('click', toggleHeaderAndMenu);
+    // Inicializar el estado de la visibilidad de la cabecera, el menú y el contador de páginas
+    if (isHeaderHidden) {
+   $headerBar.hide();
+   $pageTitle.hide();
+   $siteNav.hide();
+   $headerOptions.hide();
+   $pageCounter.hide(); // Inicialmente esconder el contador de páginas
+   $body.addClass('no-nav').css('padding-top', '10px');
+   
+   // Solo aplicar max-width si no es 0%
+   if (newMaxWidth !== '0%') {
+  $content.css('max-width', newMaxWidth); // Expandir el contenido
+  $body.css('max-width', newMaxWidth); // Expandir el cuerpo
+  $content.css('width', newMaxWidth); // Expandir el contenido
+   }
+   
+   $toggleButton.text("▼");
+   $toggleButton.attr('title', "Restaurar área de lectura");
+    } else {
+   $headerBar.show();
+   $pageTitle.show();
+   $siteNav.show();
+   $headerOptions.show();
+   $pageCounter.show(); // Inicialmente mostrar el contador de páginas
+   $body.removeClass('no-nav').css('padding-top', '');
+   $content.css('max-width', ''); // Restaurar el ancho original
+   $body.css('max-width', ''); // Restaurar el ancho original
+   $content.css('width', ''); // Restaurar el ancho original
+   $toggleButton.text("▲");
+   $toggleButton.attr('title', "Maximizar área de lectura");
+    }
+});
+</script>
+</div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
